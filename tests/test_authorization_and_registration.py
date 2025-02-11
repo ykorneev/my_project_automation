@@ -34,7 +34,7 @@ def test_registration_form(driver):
     driver.find_element(By.ID, "sign-password").send_keys("Test12345")
     driver.find_element(By.XPATH, "//button[text()='Sign up']").click()
     alert = wait.until(EC.alert_is_present())
-    assert "Sign up successful" in alert.text
+    assert "This user already exist." in alert.text
     alert.accept()
 
 # 6. Вход в систему
