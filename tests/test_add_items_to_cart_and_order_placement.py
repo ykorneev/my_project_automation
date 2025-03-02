@@ -5,7 +5,7 @@ from common_imports import *
 
 BASE_URL = "https://www.demoblaze.com/"
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="function", autouse=True)
 def driver():
     driver = webdriver.Chrome()
     driver.get(BASE_URL)
@@ -14,31 +14,57 @@ def driver():
 
 # 1. Добавление одного товара в корзину
 def test_add_one_item_to_cart(driver):
-    wait = WebDriverWait(driver, 15)                                                                            # Ожидание до 10 секунд
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6"))).click()                                 # Клик по товару "Samsung galaxy s6"
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()                                       # Клик по кнопке "Add to cart"
-    wait.until(EC.alert_is_present())
-    driver.switch_to.alert.accept()                                                                                     # Ожидание и принятие alert-окна
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Cart"))).click()                                              # Переход в корзину
-    order_description = wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[6]/div/div[1]")))        # Проверка, что блок с описанием заказа отображается
+    wait = WebDriverWait(driver, 15)
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6"))).click()
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()
+    WebDriverWait(driver, 5).until(EC.alert_is_present()).accept()
+    #Переход в корзину
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Cart"))).click()
+    #Проверка наличия товара в корзине
+    order_description = wait.until(
+        EC.visibility_of_element_located((By.XPATH, "//*[@id='tbodyid']//td[contains(text(), 'Samsung galaxy s6')]")))
     assert order_description.is_displayed()
+
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Delete"))).click()
+
 
 # 2. Добавление нескольких товаров в корзину
 def test_add_multiple_items_to_cart(driver):
     wait = WebDriverWait(driver, 15)
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6"))).click()
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()                                       # Добавление первого товара
 
-    WebDriverWait(driver, 15).until(EC.alert_is_present()).accept()
-
-    wait.until(EC.element_to_be_clickable((By.ID, "nava"))).click()                                                     # Возврат на главную страницу
-
-    wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[5]/div/div[2]/div/div[2]/div/div/h4/a"))).click()  # Добавление второго товара
+    # Добавление первого товара (Samsung galaxy s6)
+    wait.until(EC.element_to_be_clickable((By.PARTIAL_LINK_TEXT, "Samsung galaxy s6"))).click()
     wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()
-    WebDriverWait(driver, 15).until(EC.alert_is_present()).accept()
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Cart"))).click()                                              # Переход в корзину
 
-    assert wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[6]/div/div[1]"))).is_displayed()      # Проверка отображения описания заказа
+    wait.until(EC.alert_is_present())
+    driver.switch_to.alert.accept()
+
+    # Возврат на главную
+    wait.until(EC.element_to_be_clickable((By.ID, "nava"))).click()
+    wait.until(EC.presence_of_element_located((By.ID, "tbodyid")))  # Ожидание загрузки товаров
+
+    # Добавление второго товара (Nokia lumia 1520)
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//a[contains(text(), 'Nokia lumia 1520')]"))).click()
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()
+
+    wait.until(EC.alert_is_present())
+    driver.switch_to.alert.accept()
+
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Cart"))).click()
+
+    cart_items = wait.until(
+        EC.presence_of_all_elements_located(
+            (By.XPATH, "//table[@class='table table-bordered table-hover table-striped']//tr/td[2]"))
+
+    )
+    cart_items_text = [item.text for item in cart_items]
+    print(cart_items_text)
+
+    #Проверяем что в корзине два товара
+    assert "Samsung galaxy s6" in cart_items_text, "Expected 'Samsung galaxy s6' in the cart"
+    assert "Nokia lumia 1520" in cart_items_text, "Expected 'Nokia lumia 1520' in the cart"
+
+
 
 # 3. Удаление товара из корзины
 def test_delete_item_from_cart(driver):
@@ -63,20 +89,26 @@ def test_delete_item_from_cart(driver):
 def test_add_correct_item_to_cart(driver):
     wait = WebDriverWait(driver, 15)
 
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6"))).click()                                 # Открываем страницу товара
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6"))).click()  # Открываем страницу товара
     name_product = wait.until(EC.visibility_of_element_located((By.TAG_NAME, "h2"))).text
-    price_product = wait.until(EC.visibility_of_element_located((By.TAG_NAME, "h3"))).text.split(" ")[0]                # Получаем название и цену товара
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()                                       # Добавляем товар в корзину
+    price_product = wait.until(EC.visibility_of_element_located((By.TAG_NAME, "h3"))).text.split(" ")[
+        0]  # Получаем цену товара
+    price_product = price_product.replace('$', '').strip()
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Add to cart"))).click()  # Добавляем товар в корзину
 
     WebDriverWait(driver, 15).until(EC.alert_is_present()).accept()
 
-    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Cart"))).click()                                              # Переходим в корзину
+    wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Cart"))).click()  # Переходим в корзину
     cart_name_product = wait.until(EC.visibility_of_element_located((By.XPATH, "//td[2]"))).text
-    cart_price_product = wait.until(EC.visibility_of_element_located((By.XPATH, "//td[3]"))).text                       # Получаем название и цену товара в корзине
+    cart_price_product = wait.until(EC.visibility_of_element_located((By.XPATH, "//td[3]"))).text
+    cart_price_product = cart_price_product.replace('$', '').strip()  # Убираем символ доллара из цены в корзине
 
-    assert name_product == cart_name_product, f"Ожидалось {name_product}, но в корзине {cart_name_product}"
-    assert price_product == cart_price_product, f"Ожидалось {price_product}, но в корзине {cart_price_product}"         # Проверка названия и цены
-    cart_items = wait.until(EC.presence_of_all_elements_located((By.XPATH, "//tr[@class='success']")))                  # Проверка, что в корзине только один товар
+    # Преобразуем цену в float для точного сравнения
+    assert price_product == cart_price_product, f"Ожидалось {price_product}, но в корзине {cart_price_product}"  # Проверка цены
+    assert name_product == cart_name_product, f"Ожидалось {name_product}, но в корзине {cart_name_product}"  # Проверка названия товара
+
+    cart_items = wait.until(EC.presence_of_all_elements_located(
+        (By.XPATH, "//tr[@class='success']")))  # Проверка, что в корзине только один товар
     assert len(cart_items) == 1, f"Ожидался 1 товар в корзине, но найдено {len(cart_items)}"
 
 # 5. Добавление товара в корзину (пользователь авторизован)

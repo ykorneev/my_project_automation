@@ -41,16 +41,26 @@ def test_back_to_the_home_page(driver):
 # 5. Открытие карточки товара
 def test_open_card_products(driver):
     wait = WebDriverWait(driver, 10)
-    driver.find_element(By.LINK_TEXT, "Samsung galaxy s6").click()
-    wait.until(EC.visibility_of_element_located((By.ID, "more-information")))
-    assert driver.find_element(By.ID, "more-information").is_displayed()
+    # Дожидаемся появления списка товаров перед кликом
+    wait.until(EC.presence_of_element_located((By.ID, 'tbodyid')))
+    product_link = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6")))
+    product_link.click()
+    product_name = wait.until(EC.visibility_of_element_located((By.TAG_NAME, "h2")))
+
+    # Проверяем, что название товара на странице соответствует ожидаемому
+    assert product_name.text.strip() == "Samsung galaxy s6", f"Ожидалось 'Samsung galaxy s6', но найдено '{product_name.text.strip()}'"
 
 # 6. Переход на вкладку "About Us"
 def test_about_us_page(driver):
     wait = WebDriverWait(driver, 10)
     driver.find_element(By.XPATH, "/html/body/nav/div[1]/ul/li[3]/a").click()
-    wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "vjs-big-play-button")))
-    assert driver.find_element(By.CLASS_NAME, "vjs-big-play-button").is_displayed()
+    modal_window = wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div/div")))
+    assert modal_window.is_displayed(), "Модальное окно 'About Us' появилось!"
+    close_button = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[4]/div/div/div[3]/button")))
+    close_button.click()
+    wait.until(EC.invisibility_of_element_located((By.XPATH, "/html/body/div[4]/div/div")))
+    assert not modal_window.is_displayed(), "Модальное окно не закрылось!"
+
 
 # 7. Переход на страницу "Contact"
 def test_contact_us_page(driver):

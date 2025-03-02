@@ -1,0 +1,1 @@
+Товар без цены найден: <selenium.webdriver.remote.webelement.WebElement (session="55617da1c470892ee645e6424ddbf93c", element="f.79C9B8122BD830BA483794E8DB148DA9.d.C69D9595EF56353108711B7F8C6BEE9F.e.105")>

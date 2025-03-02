@@ -44,7 +44,7 @@ def test_login(driver):
     wait.until(EC.element_to_be_clickable((By.ID, "loginusername"))).send_keys("TestYura123")
     driver.find_element(By.ID, "loginpassword").send_keys("Test12345")
     driver.find_element(By.XPATH, "//button[text()='Log in']").click()
-    wait.until(EC.text_to_be_present_in_element((By.ID, "nameofuser"), "Welcome TestYura123"))
+    assert wait.until(EC.text_to_be_present_in_element((By.ID, "nameofuser"), "Welcome TestYura123"))
 
 # 7. Выход из системы
 def test_login_logout_flow(driver):
@@ -56,16 +56,17 @@ def test_login_logout_flow(driver):
     wait.until(EC.text_to_be_present_in_element((By.ID, "nameofuser"), "Welcome TestYura123"))
     driver.find_element(By.ID, "logout2").click()
     wait.until(EC.element_to_be_clickable((By.ID, "login2")))
+    assert driver.find_element(By.CLASS_NAME, "carousel-inner").is_displayed()
 
 # 8. Вход с неверным паролем
 def test_invalid_password(driver):
     wait = WebDriverWait(driver, 10)
     driver.find_element(By.ID, "login2").click()
     wait.until(EC.element_to_be_clickable((By.ID, "loginusername"))).send_keys("TestYura123")
-    driver.find_element(By.ID, "loginpassword").send_keys("WrongPassword")
-    driver.find_element(By.XPATH, "//button[text()='Log in']").click()
+    wait.until(EC.element_to_be_clickable((By.ID, "loginpassword"))).send_keys("WrongPassword")
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Log in']"))).click()
     alert = wait.until(EC.alert_is_present())
-    assert "Wrong password" in alert.text
+    assert "Wrong password" in alert.text, f"Expected alert text to contain 'Wrong password', but got {alert.text}"
     alert.accept()
 
 # 9. Вход с неверным логином
@@ -73,10 +74,10 @@ def test_invalid_username(driver):
     wait = WebDriverWait(driver, 10)
     driver.find_element(By.ID, "login2").click()
     wait.until(EC.element_to_be_clickable((By.ID, "loginusername"))).send_keys("NoLogin")
-    driver.find_element(By.ID, "loginpassword").send_keys("Test12345")
-    driver.find_element(By.XPATH, "//button[text()='Log in']").click()
+    wait.until(EC.element_to_be_clickable((By.ID, "loginpassword"))).send_keys("Test12345")
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Log in']"))).click()
     alert = wait.until(EC.alert_is_present())
-    assert "User does not exist" in alert.text
+    assert "User does not exist" in alert.text, f"Expected alert text to contain 'User does not exist', but got {alert.text}"
     alert.accept()
 
 # 10. Регистрация уже существующего пользователя
@@ -84,12 +85,12 @@ def test_registration_existing_user(driver):
     wait = WebDriverWait(driver, 10)
     driver.find_element(By.ID, "signin2").click()
     wait.until(EC.element_to_be_clickable((By.ID, "sign-username"))).send_keys("TestYura123")
-    driver.find_element(By.ID, "sign-password").send_keys("Test12345")
-    driver.find_element(By.XPATH, "//button[text()='Sign up']").click()
+    wait.until(EC.element_to_be_clickable((By.ID, "sign-password"))).send_keys("Test12345")
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Sign up']"))).click()
     alert = wait.until(EC.alert_is_present())
-    assert "This user already exist." in alert.text
+    assert "This user already exist." in alert.text, f"Expected alert text to contain 'Sign up', but got {alert.text}"
     alert.accept()
-    driver.find_element(By.CSS_SELECTOR, "#signInModal > div > div > div.modal-footer > button.btn.btn-secondary").click()
+    wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#signInModal > div > div > div.modal-footer > button.btn.btn-secondary"))).click()
     assert driver.find_element(By.LINK_TEXT, "Samsung galaxy s6").is_displayed() is True
 
 
