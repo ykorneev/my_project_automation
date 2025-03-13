@@ -175,4 +175,4 @@ cython_debug/
 
 .__pycache__/
 *.pyc
-*.pyo
+*.pyo__pycache__/
