@@ -1,88 +1,57 @@
-from common_imports import *
-
-BASE_URL = "https://www.demoblaze.com/"
+import pytest
+from pages.home_page import HomePage
+from pages.contact_page import ContactPage
 
 @pytest.fixture(scope="module")
 def driver():
+    from selenium import webdriver
     driver = webdriver.Chrome()
-    driver.get(BASE_URL)
+    driver.get("https://www.demoblaze.com/")
     yield driver
     driver.quit()
 
 # 1. Фильтр по категории Laptops
 def test_filter_laptops(driver):
-    wait = WebDriverWait(driver, 10)
-    driver.find_element(By.LINK_TEXT, "Laptops").click()
-    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "card-title")))
-    assert len(driver.find_elements(By.CLASS_NAME, "card-title")) > 0
+    home_page = HomePage(driver)
+    home_page.filter_by_category("Laptops")
+    assert home_page.is_category_loaded(), "Категория Laptops не загрузилась!"
 
 # 2. Фильтр по категории Phones
-def test_filters_phones(driver):
-    wait = WebDriverWait(driver, 10)
-    driver.find_element(By.LINK_TEXT, "Phones").click()
-    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "card-title")))
-    assert len(driver.find_elements(By.CLASS_NAME, "card-title")) > 0
+def test_filter_phones(driver):
+    home_page = HomePage(driver)
+    home_page.filter_by_category("Phones")
+    assert home_page.is_category_loaded(), "Категория Phones не загрузилась!"
 
 # 3. Фильтр по категории Monitors
-def test_filters_monitors(driver):
-    wait = WebDriverWait(driver, 10)
-    driver.find_element(By.LINK_TEXT, "Monitors").click()
-    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "card-title")))
-    assert len(driver.find_elements(By.CLASS_NAME, "card-title")) > 0
-
+def test_filter_monitors(driver):
+    home_page = HomePage(driver)
+    home_page.filter_by_category("Monitors")
+    assert home_page.is_category_loaded(), "Категория Monitors не загрузилась!"
 
 # 4. Возвращение на главную страницу
-def test_back_to_the_home_page(driver):
-    wait = WebDriverWait(driver, 10)
-    driver.find_element(By.LINK_TEXT, "Monitors").click()
-    wait.until(EC.element_to_be_clickable((By.ID, "nava"))).click()
-    assert driver.find_element(By.ID, "nava").is_displayed()
+def test_back_to_home_page(driver):
+    home_page = HomePage(driver)
+    home_page.filter_by_category("Monitors")
+    home_page.go_to_home()
+    assert home_page.is_logo_displayed(), "Главная страница не загрузилась!"
 
 # 5. Открытие карточки товара
-def test_open_card_products(driver):
-    wait = WebDriverWait(driver, 10)
-    # Дожидаемся появления списка товаров перед кликом
-    wait.until(EC.presence_of_element_located((By.ID, 'tbodyid')))
-    product_link = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Samsung galaxy s6")))
-    product_link.click()
-    product_name = wait.until(EC.visibility_of_element_located((By.TAG_NAME, "h2")))
-
-    # Проверяем, что название товара на странице соответствует ожидаемому
-    assert product_name.text.strip() == "Samsung galaxy s6", f"Ожидалось 'Samsung galaxy s6', но найдено '{product_name.text.strip()}'"
+def test_open_product_card(driver):
+    home_page = HomePage(driver)
+    home_page.open_product("Samsung galaxy s6")
+    assert home_page.is_product_page_loaded("Samsung galaxy s6"), "Страница товара не открылась!"
 
 # 6. Переход на вкладку "About Us"
-def test_about_us_page(driver):
-    wait = WebDriverWait(driver, 10)
-    driver.find_element(By.XPATH, "/html/body/nav/div[1]/ul/li[3]/a").click()
-    modal_window = wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[4]/div/div")))
-    assert modal_window.is_displayed(), "Модальное окно 'About Us' появилось!"
-    close_button = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[4]/div/div/div[3]/button")))
-    close_button.click()
-    wait.until(EC.invisibility_of_element_located((By.XPATH, "/html/body/div[4]/div/div")))
-    assert not modal_window.is_displayed(), "Модальное окно не закрылось!"
-
+def test_about_us_modal(driver):
+    home_page = HomePage(driver)
+    home_page.open_about_us()
+    assert home_page.is_about_us_displayed(), "Окно 'About Us' не появилось!"
+    home_page.close_about_us()
+    assert not home_page.is_about_us_displayed(), "Окно 'About Us' не закрылось!"
 
 # 7. Переход на страницу "Contact"
-def test_contact_us_page(driver):
-    wait = WebDriverWait(driver, 10)
-    driver.find_element(By.XPATH, "/html/body/nav/div[1]/ul/li[2]/a").click()
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "input.form-control:nth-of-type(1)")))
-
-    driver.find_element(By.CSS_SELECTOR, "input.form-control:nth-of-type(1)").send_keys("test_test@test.com")
-    driver.find_element(By.XPATH, "(//input[@class='form-control'])[2]").send_keys("Yura Korneev")
-    driver.find_element(By.XPATH, "(//textarea[@class='form-control'])[1]").send_keys("Test Message")
-
-    send_button = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div/div[3]/button[2]")))
-    send_button.click()
-
-    alert = wait.until(EC.alert_is_present())
-    assert "Thanks for the message!!" in alert.text
-    alert.accept()
-
-
-
-
-
-
-
-
+def test_contact_us(driver):
+    contact_page = ContactPage(driver)
+    contact_page.open_contact_form()
+    contact_page.fill_contact_form("test_test@test.com", "Yura Korneev", "Test Message")
+    assert contact_page.is_contact_form_sent(), "Сообщение не отправлено!"

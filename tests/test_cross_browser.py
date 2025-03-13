@@ -1,6 +1,8 @@
 from common_imports import *
+from pages.home_page import HomePage  # Импортируем POM класс для главной страницы
 
 
+# Функция для инициализации WebDriver в зависимости от браузера
 def get_driver(browser):
     if browser == 'chrome':
         options = webdriver.ChromeOptions()
@@ -14,14 +16,14 @@ def get_driver(browser):
     elif browser == 'edge':
         options = webdriver.EdgeOptions()
         return webdriver.Edge(options=options)
+    else:
+        raise ValueError(f"Браузер {browser} не поддерживается!")
+
 
 @pytest.mark.parametrize('browser', ['chrome', 'firefox', 'safari', 'edge'])
 def test_site_functionality(browser):
     driver = get_driver(browser)
     driver.get("https://www.demoblaze.com/")
-
-    # Проверка, что на главной странице есть элемент, кнопка "Log in"
-    assert driver.find_element(By.ID, "login2").is_displayed(), f"Сайт не работает в {browser}"
-
-
+    home_page = HomePage(driver)
+    assert home_page.is_log_in_button_displayed(), f"Сайт не работает в {browser}!"
     driver.quit()
