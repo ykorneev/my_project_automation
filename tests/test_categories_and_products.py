@@ -1,5 +1,13 @@
 import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 from pages.home_page import HomePage
+from pages.product_page import ProductPage
+from pages.cart_page import CartPage
+from pages.auth_page import AuthPage
 from pages.contact_page import ContactPage
 
 @pytest.fixture(scope="module")
