@@ -6,7 +6,7 @@ from pages.home_page import HomePage
 @allure.title("Фильтрация товаров по категории 'Laptops'")
 @allure.description("Проверка, что после выбора категории 'Laptops' отображаются соответствующие товары")
 def test_filter_laptops(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Выбрать категорию 'Laptops'"):
         home_page.select_category("Laptops")
@@ -19,7 +19,7 @@ def test_filter_laptops(driver, base_url):
 @allure.title("Фильтрация товаров по категории 'Phones'")
 @allure.description("Проверка, что после выбора категории 'Phones' отображаются соответствующие товары")
 def test_filters_phones(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Выбрать категорию 'Phones'"):
         home_page.select_category("Phones")
@@ -32,7 +32,7 @@ def test_filters_phones(driver, base_url):
 @allure.title("Фильтрация товаров по категории 'Monitors'")
 @allure.description("Проверка, что после выбора категории 'Monitors' отображаются товары из этой категории")
 def test_filters_monitors(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Выбрать категорию 'Monitors'"):
         home_page.select_category("Monitors")
@@ -45,7 +45,7 @@ def test_filters_monitors(driver, base_url):
 @allure.title("Возврат на главную страницу по клику на логотип")
 @allure.description("Проверка, что при клике на логотип происходит возврат на главную страницу и она загружается")
 def test_back_to_the_home_page(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Перейти в категорию 'Monitors'"):
         home_page.select_category("Monitors")
@@ -58,7 +58,7 @@ def test_back_to_the_home_page(driver, base_url):
 @allure.title("Открытие карточки товара")
 @allure.description("Проверка, что при клике на товар открывается его страница")
 def test_open_product_card(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Открыть карточку товара 'Samsung galaxy s6'"):
         home_page.open_product("Samsung galaxy s6")
@@ -69,7 +69,7 @@ def test_open_product_card(driver, base_url):
 @allure.title("Модальное окно 'About Us'")
 @allure.description("Проверка открытия и закрытия модального окна 'About Us'")
 def test_about_us_modal(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Открыть модальное окно 'About Us'"):
         home_page.open_about_us()

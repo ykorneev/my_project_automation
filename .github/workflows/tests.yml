@@ -23,9 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests with Allure
+      - name: Run tests
         run: |
-          pytest --alluredir=allure-results
+          pytest tests/ --browser=chrome --alluredir=allure-results -v
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-actions@v1.7
@@ -40,5 +40,3 @@ jobs:
         with:
           name: allure-report
           path: allure-report
-      - name: Run tests
-        run: pytest

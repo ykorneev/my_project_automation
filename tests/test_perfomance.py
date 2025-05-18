@@ -8,7 +8,7 @@ from pages.product_page import ProductPage
 @allure.title("Замер времени загрузки главной страницы")
 @allure.description("Проверка, что главная страница загружается менее чем за 5 секунд")
 def test_page_load(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     with allure.step("Начать замер времени и загрузить главную страницу"):
         start_time = time.time()
         driver.get("https://www.demoblaze.com/")
@@ -23,7 +23,7 @@ def test_page_load(driver, base_url):
 @allure.title("Замер времени загрузки страницы товара")
 @allure.description("Проверка, что страница товара загружается менее чем за 5 секунд")
 def test_page_product_load(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     product_name = "Samsung galaxy s6"

@@ -17,7 +17,7 @@ from pages.contact_page import ContactPage
 @allure.title("Проверка загрузки главной страницы")
 @allure.description("Убедиться, что при открытии сайта отображается логотип, подтверждающий загрузку страницы")
 def test_homepage(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Проверить наличие логотипа на главной странице"):
         assert home_page.is_logo_displayed(), "Главная страница не загрузилась — логотип не найден"
@@ -26,7 +26,7 @@ def test_homepage(driver, base_url):
 @allure.title("Проверка отображения кнопки 'Sign up'")
 @allure.description("Убедиться, что на главной странице отображается кнопка регистрации 'Sign up'")
 def test_sign_up_button(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     home_page = HomePage(driver)
     with allure.step("Проверить, что кнопка 'Sign up' отображается на странице"):
         assert home_page.is_sign_up_button_displayed(), "Кнопка 'Sign up' не отображается на главной странице"
@@ -35,7 +35,7 @@ def test_sign_up_button(driver, base_url):
 @allure.title("Проверка отображения кнопки 'Log in'")
 @allure.description("Убедиться, что кнопка входа в систему 'Log in' доступна на странице")
 def test_log_in_button(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     auth_page = AuthPage(driver)
     with allure.step("Проверить, что кнопка 'Log in' отображается"):
         assert auth_page.is_log_in_button_displayed(), "Кнопка 'Log in' не отображается на странице"
@@ -44,7 +44,7 @@ def test_log_in_button(driver, base_url):
 @allure.title("Проверка входа в систему")
 @allure.description("Авторизация пользователя с корректными учетными данными и проверка успешного входа")
 def test_login(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     auth_page = AuthPage(driver)
     with allure.step("Открыть форму входа"):
         auth_page.open_login_form()
@@ -63,7 +63,7 @@ def test_login(driver, base_url):
 @allure.title("Проверка выхода из системы")
 @allure.description("Авторизация пользователя и проверка корректного завершения сессии через выход")
 def test_login_logout_flow(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     auth_page = AuthPage(driver)
     with allure.step("Авторизоваться с валидными данными"):
         assert auth_page.login("TestYura123", "Test12345"), "Авторизация не выполнена"
@@ -76,7 +76,7 @@ def test_login_logout_flow(driver, base_url):
 @allure.title("Проверка входа с неверным паролем")
 @allure.description("Убедиться, что при вводе некорректного пароля появляется предупреждение и вход не выполняется")
 def test_invalid_password(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     auth_page = AuthPage(driver)
     with allure.step("Попытка входа с неверным паролем"):
         auth_page.login("TestYura123", "WrongPassword")
@@ -87,7 +87,7 @@ def test_invalid_password(driver, base_url):
 @allure.title("Проверка входа с неверным логином")
 @allure.description("Убедиться, что при вводе несуществующего логина появляется предупреждение об ошибке")
 def test_invalid_username(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     auth_page = AuthPage(driver)
     with allure.step("Попытка входа с несуществующим логином"):
         auth_page.login("NoLogin", "Test12345")
@@ -98,7 +98,7 @@ def test_invalid_username(driver, base_url):
 @allure.title("Регистрация с уже существующим логином")
 @allure.description("Проверка, что при попытке регистрации с существующим именем пользователя появляется соответствующее предупреждение")
 def test_registration_existing_user(driver, base_url):
-    driver.get(BASE_URL)
+    driver.get(base_url)
     auth_page = AuthPage(driver)
     with allure.step("Попытка регистрации с уже существующим именем пользователя"):
         auth_page.register("TestYura123", "Test12345")
