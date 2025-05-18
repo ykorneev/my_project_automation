@@ -1,0 +1,143 @@
+{
+  "uid" : "d12b9c063ba83bf3",
+  "name" : "test_login",
+  "fullName" : "tests.test_authorization_and_registration#test_login",
+  "historyId" : "64ed14bba4e56324e103f70040f0793d",
+  "time" : {
+    "start" : 1745242593672,
+    "stop" : 1745242594654,
+    "duration" : 982
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Вход в систему не выполнен\nassert False\n +  where False = <bound method AuthPage.is_logged_in of <pages.auth_page.AuthPage object at 0x1074c28a0>>()\n +    where <bound method AuthPage.is_logged_in of <pages.auth_page.AuthPage object at 0x1074c28a0>> = <pages.auth_page.AuthPage object at 0x1074c28a0>.is_logged_in",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"c1ac7b74936051fe75e6698162d9b2d7\")>\n\n    def test_login(driver):\n        auth_page = AuthPage(driver)\n        auth_page.open_login_form()\n        auth_page.enter_credentials(username=\"TestYura123\", password=\"Test12345\")\n        auth_page.submit_login()\n>       assert auth_page.is_logged_in(), \"Вход в систему не выполнен\"\nE       AssertionError: Вход в систему не выполнен\nE       assert False\nE        +  where False = <bound method AuthPage.is_logged_in of <pages.auth_page.AuthPage object at 0x1074c28a0>>()\nE        +    where <bound method AuthPage.is_logged_in of <pages.auth_page.AuthPage object at 0x1074c28a0>> = <pages.auth_page.AuthPage object at 0x1074c28a0>.is_logged_in\n\ntests/test_authorization_and_registration.py:36: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1745242496989,
+      "stop" : 1745242496989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1745242496988,
+      "stop" : 1745242496989,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1745242593671,
+      "stop" : 1745242593671,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1745242496989,
+      "stop" : 1745242496989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1745242591555,
+      "stop" : 1745242593541,
+      "duration" : 1986
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1745242627417,
+      "stop" : 1745242627551,
+      "duration" : 134
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorization_and_registration"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "4945-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_authorization_and_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d12b9c063ba83bf3.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,143 @@
+{
+  "uid" : "e23ef96e9a5dfc09",
+  "name" : "test_registration_form",
+  "fullName" : "tests.test_authorization_and_registration#test_registration_form",
+  "historyId" : "17c54c8943785dc49fe70debee7e01f3",
+  "time" : {
+    "start" : 1739231223642,
+    "stop" : 1739231225146,
+    "duration" : 1504
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'Sign up successful' in 'This user already exist.'\n +  where 'This user already exist.' = <selenium.webdriver.common.alert.Alert object at 0x10667bec0>.text",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"6b31d999d897383abf19daccd499b30b\")>\n\n    def test_registration_form(driver):\n        wait = WebDriverWait(driver, 10)\n        driver.find_element(By.ID, \"signin2\").click()\n        wait.until(EC.element_to_be_clickable((By.ID, \"sign-username\"))).send_keys(\"TestYura123\")\n        driver.find_element(By.ID, \"sign-password\").send_keys(\"Test12345\")\n        driver.find_element(By.XPATH, \"//button[text()='Sign up']\").click()\n        alert = wait.until(EC.alert_is_present())\n>       assert \"Sign up successful\" in alert.text\nE       AssertionError: assert 'Sign up successful' in 'This user already exist.'\nE        +  where 'This user already exist.' = <selenium.webdriver.common.alert.Alert object at 0x10667bec0>.text\n\ntests/test_authorization_and_registration.py:37: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1739231220971,
+      "stop" : 1739231223485,
+      "duration" : 2514
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033747,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1739231033747,
+      "stop" : 1739231033747,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1739231223641,
+      "stop" : 1739231223641,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033746,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1739231229650,
+      "stop" : 1739231229845,
+      "duration" : 195
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorization_and_registration"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "91139-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_authorization_and_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e23ef96e9a5dfc09.json",
+  "parameterValues" : [ ]
+}

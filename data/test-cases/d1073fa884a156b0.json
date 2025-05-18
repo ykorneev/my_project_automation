@@ -1,0 +1,161 @@
+{
+  "uid" : "d1073fa884a156b0",
+  "name" : "test_product_prices",
+  "fullName" : "tests.test_content#test_product_prices",
+  "historyId" : "42c23d6e64ba20232a3fe86db9c8260b",
+  "time" : {
+    "start" : 1745242646946,
+    "stop" : 1745242646966,
+    "duration" : 20
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Некоторые товары не имеют цены!\nassert False\n +  where False = <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>>()\n +    where <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>> = <pages.home_page.HomePage object at 0x10750d040>.are_product_prices_displayed",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"955734b63758b8e930d63ff96d1e8bc5\")>\n\n    def test_product_prices(driver):\n        home_page = HomePage(driver)\n>       assert home_page.are_product_prices_displayed(), \"Некоторые товары не имеют цены!\"\nE       AssertionError: Некоторые товары не имеют цены!\nE       assert False\nE        +  where False = <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>>()\nE        +    where <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>> = <pages.home_page.HomePage object at 0x10750d040>.are_product_prices_displayed\n\ntests/test_content.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1745242496989,
+      "stop" : 1745242496989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1745242644285,
+      "stop" : 1745242646347,
+      "duration" : 2062
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1745242496988,
+      "stop" : 1745242496989,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1745242646946,
+      "stop" : 1745242646946,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1745242496989,
+      "stop" : 1745242496989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Некоторые товары не имеют цены!\nassert False\n +  where False = <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>>()\n +    where <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>> = <pages.home_page.HomePage object at 0x10750d040>.are_product_prices_displayed",
+    "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"955734b63758b8e930d63ff96d1e8bc5\")>\n\n    def test_product_prices(driver):\n        home_page = HomePage(driver)\n>       assert home_page.are_product_prices_displayed(), \"Некоторые товары не имеют цены!\"\nE       AssertionError: Некоторые товары не имеют цены!\nE       assert False\nE        +  where False = <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>>()\nE        +    where <bound method HomePage.are_product_prices_displayed of <pages.home_page.HomePage object at 0x10750d040>> = <pages.home_page.HomePage object at 0x10750d040>.are_product_prices_displayed\n\ntests/test_content.py:21: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "efb02aea5d3aaed2",
+      "name" : "stdout",
+      "source" : "efb02aea5d3aaed2.txt",
+      "type" : "text/plain",
+      "size" : 42
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1745242647065,
+      "stop" : 1745242647169,
+      "duration" : 104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_content"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "4945-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_content"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1073fa884a156b0.json",
+  "parameterValues" : [ ]
+}

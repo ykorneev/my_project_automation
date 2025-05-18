@@ -1,8 +1,8 @@
 [ {
-  "buildOrder" : 16,
-  "reportUrl" : "https://ykorneev.github.io/my_project_automation/16/",
+  "buildOrder" : 17,
+  "reportUrl" : "https://ykorneev.github.io/my_project_automation/17/",
   "reportName" : "Allure Report with history",
   "data" : {
-    "duration" : 6570719812
+    "duration" : 6573319423
   }
 } ]
