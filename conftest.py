@@ -1,7 +1,13 @@
 import pytest
+import tempfile
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
+
+
+@pytest.fixture(scope="session")
+def base_url():
+    return "https://www.demoblaze.com/"
 
 def get_driver(browser_name):
     if browser_name == "chrome":

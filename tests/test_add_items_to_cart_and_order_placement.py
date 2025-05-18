@@ -11,14 +11,13 @@ from pages.cart_page import CartPage
 from pages.auth_page import AuthPage
 from pages.contact_page import ContactPage
 
-BASE_URL = "https://www.demoblaze.com/"
-
 
 
 # 1. Добавление одного товара в корзину
 @allure.title("Добавление одного товара в корзину")
 @allure.description("Проверка добавления товара 'Samsung galaxy s6' в корзину")
-def test_add_one_item_to_cart(driver):
+def test_add_one_item_to_cart(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -32,7 +31,8 @@ def test_add_one_item_to_cart(driver):
 # 2. Добавление нескольких товаров в корзину
 @allure.title("Добавление нескольких товаров в корзину")
 @allure.description("Проверка добавления двух товаров: 'Samsung galaxy s6' и 'Nokia lumia 1520' в корзину")
-def test_add_multiple_items_to_cart(driver):
+def test_add_multiple_items_to_cart(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -59,7 +59,8 @@ def test_add_multiple_items_to_cart(driver):
 # 3. Удаление товара из корзины
 @allure.title("Удаление товара из корзины")
 @allure.description("Проверка удаления товара из корзины")
-def test_delete_item_from_cart(driver):
+def test_delete_item_from_cart(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -72,7 +73,8 @@ def test_delete_item_from_cart(driver):
 # 4. Проверка оформления заказа
 @allure.title("Оформление заказа")
 @allure.description("Проверка успешного оформления заказа с корректными данными")
-def test_order_placement(driver):
+def test_order_placement(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -93,14 +95,16 @@ def test_order_placement(driver):
 # 5. Проверка авторизации
 @allure.title("Авторизация")
 @allure.description("Проверка входа в систему с валидными учетными данными")
-def test_login(driver):
+def test_login(driver, base_url):
+    driver.get(BASE_URL)
     auth_page = AuthPage(driver)
     assert auth_page.login("TestYura123", "Test12345"), "Не удалось войти в систему!"
 
 # 6. Проверка выхода из системы
 @allure.title("Выход из системы")
 @allure.description("Проверка выхода из учетной записи после авторизации")
-def test_logout(driver):
+def test_logout(driver, base_url):
+    driver.get(BASE_URL)
     auth_page = AuthPage(driver)
     auth_page.login("TestYura123", "Test12345")
     assert auth_page.is_logged_in(), "Вход в систему не был выполнен!"
@@ -114,7 +118,8 @@ def test_logout(driver):
 # 7. Проверка отправки сообщения в Contact Us
 @allure.title("Отправка сообщения через форму Contact Us")
 @allure.description("Проверка, что сообщение успешно отправляется через форму 'Contact Us'")
-def test_contact_us(driver):
+def test_contact_us(driver, base_url):
+    driver.get(BASE_URL)
     contact_page = ContactPage(driver)
 
     with allure.step("Открыть форму обратной связи"):
@@ -142,7 +147,8 @@ def test_contact_us(driver):
 # 8. Проверка загрузки главной страницы
 @allure.title("Загрузка главной страницы")
 @allure.description("Проверка отображения логотипа как подтверждение загрузки главной страницы")
-def test_homepage(driver):
+def test_homepage(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
 
     with allure.step("Проверить отображение логотипа на главной странице"):
@@ -152,7 +158,8 @@ def test_homepage(driver):
 # 9. Проверка фильтрации товаров по категориям
 @allure.title("Фильтрация товаров по категории 'Laptops'")
 @allure.description("Проверка, что при выборе категории 'Laptops' отображаются соответствующие товары")
-def test_category_filter(driver):
+def test_category_filter(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
 
     with allure.step("Выбрать категорию 'Laptops'"):
@@ -167,7 +174,8 @@ def test_category_filter(driver):
 # 10. Добавление товара в корзину (пользователь авторизован)
 @allure.title("Добавление товара в корзину авторизованным пользователем и оформление заказа")
 @allure.description("Проверка успешного добавления 'MacBook air' в корзину и оформления заказа после авторизации")
-def test_add_to_cart(driver):
+def test_add_to_cart(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -205,7 +213,8 @@ def test_add_to_cart(driver):
 # 11. Оформление заказа с пустым полем номером карты
 @allure.title("Оформление заказа с пустым полем карты")
 @allure.description("Проверка, что при попытке оформить заказ без номера карты появляется предупреждение")
-def test_incorrect_card_number(driver):
+def test_incorrect_card_number(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -240,7 +249,8 @@ def test_incorrect_card_number(driver):
 # 12. Оформление заказа с пустым полем Name
 @allure.title("Оформление заказа с пустым полем имени")
 @allure.description("Проверка, что при оформлении заказа без имени появляется соответствующий алерт")
-def test_empty_name(driver):
+def test_empty_name(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -275,7 +285,8 @@ def test_empty_name(driver):
 # 13. Оформление заказа с пустым полем Country
 @allure.title("Оформление заказа с пустым полем 'Country'")
 @allure.description("Проверка, что заказ оформляется даже при отсутствии страны")
-def test_empty_field_country(driver):
+def test_empty_field_country(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
     product_page = ProductPage(driver)
     cart_page = CartPage(driver)
@@ -307,7 +318,8 @@ def test_empty_field_country(driver):
 # 14. Фильтрация товаров
 @allure.title("Фильтрация товаров по категории 'Phones'")
 @allure.description("Проверка, что при выборе категории 'Phones' отображаются только соответствующие товары")
-def test_phones_category(driver):
+def test_phones_category(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
 
     with allure.step("Выбрать категорию 'Phones'"):
@@ -329,7 +341,8 @@ def test_phones_category(driver):
 
 @allure.title("Фильтрация товаров по категории 'Laptops'")
 @allure.description("Проверка, что отображаются только ноутбуки при выборе категории 'Laptops'")
-def test_laptops_category(driver):
+def test_laptops_category(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
 
     with allure.step("Выбрать категорию 'Laptops'"):
@@ -351,7 +364,8 @@ def test_laptops_category(driver):
 
 @allure.title("Фильтрация товаров по категории 'Monitors'")
 @allure.description("Проверка, что при выборе категории 'Monitors' отображаются только мониторы")
-def test_monitors_category(driver):
+def test_monitors_category(driver, base_url):
+    driver.get(BASE_URL)
     home_page = HomePage(driver)
 
     with allure.step("Выбрать категорию 'Monitors'"):

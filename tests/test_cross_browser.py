@@ -3,7 +3,7 @@ import allure
 from selenium import webdriver
 from pages.home_page import HomePage
 
-BASE_URL = "https://www.demoblaze.com/"
+
 
 
 def get_driver(browser):
