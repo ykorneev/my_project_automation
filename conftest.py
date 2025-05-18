@@ -10,7 +10,7 @@ def get_driver(browser_name):
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
-        # УДАЛИЛИ: --user-data-dir
+        options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
         return webdriver.Chrome(options=options)
 
     elif browser_name == "firefox":
