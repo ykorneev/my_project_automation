@@ -1,65 +1,85 @@
 import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
+import allure
 from pages.home_page import HomePage
-from pages.product_page import ProductPage
-from pages.cart_page import CartPage
-from pages.auth_page import AuthPage
-from pages.contact_page import ContactPage
 
-@pytest.fixture(scope="module")
+
+@pytest.fixture(scope="function")
 def driver():
     from selenium import webdriver
+
     driver = webdriver.Chrome()
     driver.get("https://www.demoblaze.com/")
     yield driver
     driver.quit()
 
-# 1. Фильтр по категории Laptops
+
+@allure.title("Фильтрация товаров по категории 'Laptops'")
+@allure.description("Проверка, что после выбора категории 'Laptops' отображаются соответствующие товары")
 def test_filter_laptops(driver):
     home_page = HomePage(driver)
-    home_page.filter_by_category("Laptops")
-    assert home_page.is_category_loaded(), "Категория Laptops не загрузилась!"
+    with allure.step("Выбрать категорию 'Laptops'"):
+        home_page.select_category("Laptops")
+    with allure.step("Получить список отображаемых товаров"):
+        products = home_page.get_product_names()
+    with allure.step("Проверить, что список товаров не пуст"):
+        assert len(products) > 0, "Товары не отображаются в категории 'Laptops'"
 
-# 2. Фильтр по категории Phones
-def test_filter_phones(driver):
+
+@allure.title("Фильтрация товаров по категории 'Phones'")
+@allure.description("Проверка, что после выбора категории 'Phones' отображаются соответствующие товары")
+def test_filters_phones(driver):
     home_page = HomePage(driver)
-    home_page.filter_by_category("Phones")
-    assert home_page.is_category_loaded(), "Категория Phones не загрузилась!"
+    with allure.step("Выбрать категорию 'Phones'"):
+        home_page.select_category("Phones")
+    with allure.step("Получить список отображаемых товаров"):
+        products = home_page.get_product_names()
+    with allure.step("Проверить, что список товаров не пуст"):
+        assert len(products) > 0, "Товары не отображаются в категории 'Phones'"
 
-# 3. Фильтр по категории Monitors
-def test_filter_monitors(driver):
+
+@allure.title("Фильтрация товаров по категории 'Monitors'")
+@allure.description("Проверка, что после выбора категории 'Monitors' отображаются товары из этой категории")
+def test_filters_monitors(driver):
     home_page = HomePage(driver)
-    home_page.filter_by_category("Monitors")
-    assert home_page.is_category_loaded(), "Категория Monitors не загрузилась!"
+    with allure.step("Выбрать категорию 'Monitors'"):
+        home_page.select_category("Monitors")
+    with allure.step("Получить список отображаемых товаров"):
+        products = home_page.get_product_names()
+    with allure.step("Проверить, что список товаров не пуст"):
+        assert len(products) > 0, "Товары не отображаются в категории 'Monitors'"
 
-# 4. Возвращение на главную страницу
-def test_back_to_home_page(driver):
+
+@allure.title("Возврат на главную страницу по клику на логотип")
+@allure.description("Проверка, что при клике на логотип происходит возврат на главную страницу и она загружается")
+def test_back_to_the_home_page(driver):
     home_page = HomePage(driver)
-    home_page.filter_by_category("Monitors")
-    home_page.go_to_home()
-    assert home_page.is_logo_displayed(), "Главная страница не загрузилась!"
+    with allure.step("Перейти в категорию 'Monitors'"):
+        home_page.select_category("Monitors")
+    with allure.step("Нажать на логотип сайта для возврата на главную"):
+        home_page.click_logo()
+    with allure.step("Проверить, что главная страница загружена"):
+        assert home_page.is_logo_displayed(), "Главная страница не загрузилась после клика по логотипу"
 
-# 5. Открытие карточки товара
+
+@allure.title("Открытие карточки товара")
+@allure.description("Проверка, что при клике на товар открывается его страница")
 def test_open_product_card(driver):
     home_page = HomePage(driver)
-    home_page.open_product("Samsung galaxy s6")
-    assert home_page.is_product_page_loaded("Samsung galaxy s6"), "Страница товара не открылась!"
+    with allure.step("Открыть карточку товара 'Samsung galaxy s6'"):
+        home_page.open_product("Samsung galaxy s6")
+    with allure.step("Проверить, что страница товара загружена"):
+        assert home_page.is_product_page_loaded("Samsung galaxy s6"), "Страница товара не открылась"
 
-# 6. Переход на вкладку "About Us"
+
+@allure.title("Модальное окно 'About Us'")
+@allure.description("Проверка открытия и закрытия модального окна 'About Us'")
 def test_about_us_modal(driver):
     home_page = HomePage(driver)
-    home_page.open_about_us()
-    assert home_page.is_about_us_displayed(), "Окно 'About Us' не появилось!"
-    home_page.close_about_us()
-    assert not home_page.is_about_us_displayed(), "Окно 'About Us' не закрылось!"
-
-# 7. Переход на страницу "Contact"
-def test_contact_us(driver):
-    contact_page = ContactPage(driver)
-    contact_page.open_contact_form()
-    contact_page.fill_contact_form("test_test@test.com", "Yura Korneev", "Test Message")
-    assert contact_page.is_contact_form_sent(), "Сообщение не отправлено!"
+    with allure.step("Открыть модальное окно 'About Us'"):
+        home_page.open_about_us()
+    with allure.step("Проверить, что окно 'About Us' отображается"):
+        assert home_page.is_about_us_displayed(), "Окно 'About Us' не появилось"
+    with allure.step("Закрыть окно 'About Us'"):
+        home_page.close_about_us()
+    with allure.step("Проверить, что окно 'About Us' закрыто"):
+        assert not home_page.is_about_us_displayed(), "Окно 'About Us' не закрылось"

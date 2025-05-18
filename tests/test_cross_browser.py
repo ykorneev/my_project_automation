@@ -1,38 +1,38 @@
 import pytest
+import allure
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 from pages.home_page import HomePage
-from pages.product_page import ProductPage
-from pages.cart_page import CartPage
-from pages.auth_page import AuthPage
-from pages.contact_page import ContactPage
+
+BASE_URL = "https://www.demoblaze.com/"
 
 
-# Функция для инициализации WebDriver в зависимости от браузера
 def get_driver(browser):
     if browser == 'chrome':
-        options = webdriver.ChromeOptions()
-        return webdriver.Chrome(options=options)
+        return webdriver.Chrome()
     elif browser == 'firefox':
-        options = webdriver.FirefoxOptions()
-        return webdriver.Firefox(options=options)
+        return webdriver.Firefox()
     elif browser == 'safari':
-        options = webdriver.SafariOptions()
-        return webdriver.Safari(options=options)
+        return webdriver.Safari()
     elif browser == 'edge':
-        options = webdriver.EdgeOptions()
-        return webdriver.Edge(options=options)
+        return webdriver.Edge()
     else:
-        raise ValueError(f"Браузер {browser} не поддерживается!")
+        raise ValueError(f"Unsupported browser: {browser}")
 
 
+@allure.title("Кросс-браузерная проверка отображения кнопки 'Log in'")
+@allure.description("Проверка, что кнопка входа отображается в разных браузерах")
 @pytest.mark.parametrize('browser', ['chrome', 'firefox', 'safari', 'edge'])
 def test_site_functionality(browser):
-    driver = get_driver(browser)
-    driver.get("https://www.demoblaze.com/")
-    home_page = HomePage(driver)
-    assert home_page.is_log_in_button_displayed(), f"Сайт не работает в {browser}!"
-    driver.quit()
+    with allure.step(f"Инициализация драйвера для браузера: {browser}"):
+        driver = get_driver(browser)
+    try:
+        with allure.step("Открыть сайт"):
+            driver.get(BASE_URL)
+            home_page = HomePage(driver)
+        with allure.step("Проверить, что кнопка 'Log in' отображается"):
+            assert home_page.is_log_in_button_displayed(), (
+                f"Кнопка 'Log in' не отображается в браузере {browser}"
+            )
+    finally:
+        with allure.step(f"Закрытие браузера: {browser}"):
+            driver.quit()

@@ -17,3 +17,17 @@ class BasePage:
     def accept_alert(self):
         self.wait.until(EC.alert_is_present())
         self.driver.switch_to.alert.accept()
+
+    def send_keys(self, locator, text):
+        element = self.wait.until(EC.element_to_be_clickable(locator))
+        element.clear()
+        element.send_keys(text)
+
+    def wait_for_visible(self, locator):
+        return self.wait.until(EC.visibility_of_element_located(locator))
+
+    def is_visible(self, locator):
+        try:
+            return self.wait.until(EC.visibility_of_element_located(locator)).is_displayed()
+        except:
+            return False

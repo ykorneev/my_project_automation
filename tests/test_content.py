@@ -1,36 +1,47 @@
 import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
+import allure
 from pages.home_page import HomePage
-from pages.product_page import ProductPage
-from pages.cart_page import CartPage
-from pages.auth_page import AuthPage
-from pages.contact_page import ContactPage
 
 BASE_URL = "https://www.demoblaze.com/"
 
-@pytest.fixture(scope="module")
+
+@pytest.fixture(scope="function")
 def driver():
+    from selenium import webdriver
+
     driver = webdriver.Chrome()
     driver.get(BASE_URL)
     yield driver
     driver.quit()
 
-# 1. Тест на проверку отображения картинок товаров
+
+# 1. Проверка отображения изображений товаров
+@allure.title("Проверка отображения изображений товаров")
+@allure.description("Убедиться, что все отображаемые товары содержат изображения")
 def test_product_images(driver):
     home_page = HomePage(driver)
-    assert home_page.are_product_images_displayed(), "Товары не найдены или у некоторых отсутствуют изображения!"
+    with allure.step("Проверить, что у всех товаров есть изображения"):
+        assert home_page.are_product_images_displayed(), (
+            "Товары не найдены или у некоторых отсутствуют изображения")
 
-# 2. Тест на проверку отображения цен товаров
+
+# 2. Проверка отображения цен товаров
+@allure.title("Проверка отображения цен товаров")
+@allure.description("Убедиться, что у каждого товара на странице указана цена")
 def test_product_prices(driver):
     home_page = HomePage(driver)
-    assert home_page.are_product_prices_displayed(), "Некоторые товары не имеют цены!"
+    with allure.step("Проверить, что все товары содержат цену"):
+        assert home_page.are_product_prices_displayed(), (
+            "Некоторые товары не имеют цены")
 
-# 3. Кнопка Next
+
+# 3. Проверка работы кнопки 'Next'
+@allure.title("Проверка работы кнопки 'Next'")
+@allure.description("Убедиться, что при нажатии кнопки 'Next' происходит смена товаров")
 def test_next_button(driver):
     home_page = HomePage(driver)
-    home_page.click_next_button()
-    assert home_page.are_products_updated_after_next(), "По нажатию кнопки Next товары не обновились"
+    with allure.step("Нажать на кнопку 'Next'"):
+        home_page.click_next_button()
+    with allure.step("Проверить, что список товаров изменился"):
+        assert home_page.are_products_updated_after_next(), (
+            "По нажатию кнопки 'Next' товары не обновились")

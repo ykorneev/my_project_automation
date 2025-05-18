@@ -178,3 +178,5 @@ cython_debug/
 *.pyo__pycache__/
 .idea/
 common_imports.py
+allure-results/
+allure-report/
