@@ -1,12 +1,25 @@
 import pytest
-from selenium import webdriver
 import allure
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 BASE_URL = "https://www.demoblaze.com/"
 
-@pytest.fixture(scope="function")  # Запуск браузера перед каждым тестом
+@pytest.fixture(scope="function")
 def driver():
-    driver = webdriver.Chrome()  # Открытие браузера
-    driver.get(BASE_URL)  # Переход на главную страницу
+    options = Options()
+    options.add_argument("--headless")  # Запуск без GUI
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--user-data-dir=/tmp/unique-profile")  # Решает проблему reuse
+
+    driver = webdriver.Chrome(options=options)
+    driver.get(BASE_URL)
     yield driver
-    driver.quit()  # Закрытие браузера после каждого теста
+    driver.quit()
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_configure(config):
+    config.option.allure_report_dir = "allure-results"
