@@ -1,5 +1,4 @@
 import pytest
-import tempfile
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
@@ -11,7 +10,7 @@ def get_driver(browser_name):
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-gpu")
-        options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
+        # УДАЛИЛИ: --user-data-dir
         return webdriver.Chrome(options=options)
 
     elif browser_name == "firefox":
@@ -22,7 +21,6 @@ def get_driver(browser_name):
     else:
         raise ValueError(f"Unsupported browser: {browser_name}")
 
-
 def pytest_addoption(parser):
     parser.addoption(
         "--browser",
@@ -30,7 +28,6 @@ def pytest_addoption(parser):
         default="chrome",
         help="Browser name: chrome or firefox"
     )
-
 
 @pytest.fixture(scope="function")
 def driver(request):
