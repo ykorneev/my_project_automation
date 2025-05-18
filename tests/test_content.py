@@ -5,16 +5,6 @@ from pages.home_page import HomePage
 BASE_URL = "https://www.demoblaze.com/"
 
 
-@pytest.fixture(scope="function")
-def driver():
-    from selenium import webdriver
-
-    driver = webdriver.Chrome()
-    driver.get(BASE_URL)
-    yield driver
-    driver.quit()
-
-
 # 1. Проверка отображения изображений товаров
 @allure.title("Проверка отображения изображений товаров")
 @allure.description("Убедиться, что все отображаемые товары содержат изображения")

@@ -14,13 +14,6 @@ from pages.contact_page import ContactPage
 BASE_URL = "https://www.demoblaze.com/"
 
 
-@pytest.fixture(scope="function")
-def driver():
-    driver = webdriver.Chrome()
-    driver.get(BASE_URL)
-    yield driver
-    driver.quit()
-
 
 # 1. Добавление одного товара в корзину
 @allure.title("Добавление одного товара в корзину")

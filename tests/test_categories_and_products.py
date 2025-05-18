@@ -3,16 +3,6 @@ import allure
 from pages.home_page import HomePage
 
 
-@pytest.fixture(scope="function")
-def driver():
-    from selenium import webdriver
-
-    driver = webdriver.Chrome()
-    driver.get("https://www.demoblaze.com/")
-    yield driver
-    driver.quit()
-
-
 @allure.title("Фильтрация товаров по категории 'Laptops'")
 @allure.description("Проверка, что после выбора категории 'Laptops' отображаются соответствующие товары")
 def test_filter_laptops(driver):

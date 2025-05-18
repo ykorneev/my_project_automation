@@ -13,13 +13,6 @@ from pages.contact_page import ContactPage
 
 BASE_URL = "https://www.demoblaze.com/"
 
-@pytest.fixture(scope="module")
-def driver():
-    driver = webdriver.Chrome()
-    driver.get(BASE_URL)
-    yield driver
-    driver.quit()
-
 # 1. Проверка загрузки главной страницы
 @allure.title("Проверка загрузки главной страницы")
 @allure.description("Убедиться, что при открытии сайта отображается логотип, подтверждающий загрузку страницы")
