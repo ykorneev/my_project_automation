@@ -1,0 +1,170 @@
+{
+  "uid" : "e40a80b7dd25b067",
+  "name" : "Добавление нескольких товаров в корзину",
+  "fullName" : "tests.test_add_items_to_cart_and_order_placement#test_add_multiple_items_to_cart",
+  "historyId" : "d492ec8626a9e3519f682ef2c51b75b2",
+  "time" : {
+    "start" : 1747603652394,
+    "stop" : 1747603652394,
+    "duration" : 0
+  },
+  "description" : "Проверка добавления двух товаров: 'Samsung galaxy s6' и 'Nokia lumia 1520' в корзину",
+  "descriptionHtml" : "<p>Проверка добавления двух товаров: 'Samsung galaxy s6' и 'Nokia lumia 1520' в корзину</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+  "statusTrace" : "('/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py', 79, \"Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\")",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652390,
+      "duration" : 245
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1747603652394,
+      "stop" : 1747603652394,
+      "duration" : 0
+    },
+    "status" : "skipped",
+    "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 139, in _multicall\n    teardown.throw(exception)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 53, in run_old_style_hookwrapper\n    return result.get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_result.py\", line 103, in get_result\n    raise exc.with_traceback(tb)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 121, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py\", line 79, in _skip_sensitive\n    pytest.skip(\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_items_to_cart_and_order_placement"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmf6wy0o8zjz"
+  }, {
+    "name" : "thread",
+    "value" : "2511-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_add_items_to_cart_and_order_placement"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b41826992702bb48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1745242509939,
+        "stop" : 1745242515516,
+        "duration" : 5577
+      }
+    }, {
+      "uid" : "6e3868d51dc01117",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741821619742,
+        "stop" : 1741821625196,
+        "duration" : 5454
+      }
+    }, {
+      "uid" : "839f5477513d506a",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'HomePage' object has no attribute 'wait_for_products_to_load'",
+      "time" : {
+        "start" : 1741818226598,
+        "stop" : 1741818229014,
+        "duration" : 2416
+      }
+    }, {
+      "uid" : "49b4960759afb7fd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032914000,
+        "stop" : 1741032919998,
+        "duration" : 5998
+      }
+    }, {
+      "uid" : "f31a89569c083fc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n0   chromedriver                        0x0000000109bc3bc8 chromedriver + 5766088\n1   chromedriver                        0x0000000109bbb7ea chromedriver + 5732330\n2   chromedriver                        0x00000001096a9680 chromedriver + 415360\n3   chromedriver                        0x00000001096fad7d chromedriver + 748925\n4   chromedriver                        0x00000001096faf21 chromedriver + 749345\n5   chromedriver                        0x000000010974b184 chromedriver + 1077636\n6   chromedriver                        0x000000010972107d chromedriver + 905341\n7   chromedriver                        0x00000001097483e7 chromedriver + 1065959\n8   chromedriver                        0x0000000109720e23 chromedriver + 904739\n9   chromedriver                        0x00000001096ecbea chromedriver + 691178\n10  chromedriver                        0x00000001096edd41 chromedriver + 695617\n11  chromedriver                        0x0000000109b87100 chromedriver + 5517568\n12  chromedriver                        0x0000000109b8b040 chromedriver + 5533760\n13  chromedriver                        0x0000000109b68c87 chromedriver + 5393543\n14  chromedriver                        0x0000000109b8bacb chromedriver + 5536459\n15  chromedriver                        0x0000000109b57544 chromedriver + 5322052\n16  chromedriver                        0x0000000109ba96e8 chromedriver + 5658344\n17  chromedriver                        0x0000000109ba98af chromedriver + 5658799\n18  chromedriver                        0x0000000109bbb3c8 chromedriver + 5731272\n19  libsystem_pthread.dylib             0x00007ff81b7cc253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff81b7c7bef thread_start + 15",
+      "time" : {
+        "start" : 1739233103984,
+        "stop" : 1739233119086,
+        "duration" : 15102
+      }
+    }, {
+      "uid" : "93ad68a8b7071c72",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n0   chromedriver                        0x000000010c8f4bc8 chromedriver + 5766088\n1   chromedriver                        0x000000010c8ec7ea chromedriver + 5732330\n2   chromedriver                        0x000000010c3da680 chromedriver + 415360\n3   chromedriver                        0x000000010c42bd7d chromedriver + 748925\n4   chromedriver                        0x000000010c42bf21 chromedriver + 749345\n5   chromedriver                        0x000000010c47c184 chromedriver + 1077636\n6   chromedriver                        0x000000010c45207d chromedriver + 905341\n7   chromedriver                        0x000000010c4793e7 chromedriver + 1065959\n8   chromedriver                        0x000000010c451e23 chromedriver + 904739\n9   chromedriver                        0x000000010c41dbea chromedriver + 691178\n10  chromedriver                        0x000000010c41ed41 chromedriver + 695617\n11  chromedriver                        0x000000010c8b8100 chromedriver + 5517568\n12  chromedriver                        0x000000010c8bc040 chromedriver + 5533760\n13  chromedriver                        0x000000010c899c87 chromedriver + 5393543\n14  chromedriver                        0x000000010c8bcacb chromedriver + 5536459\n15  chromedriver                        0x000000010c888544 chromedriver + 5322052\n16  chromedriver                        0x000000010c8da6e8 chromedriver + 5658344\n17  chromedriver                        0x000000010c8da8af chromedriver + 5658799\n18  chromedriver                        0x000000010c8ec3c8 chromedriver + 5731272\n19  libsystem_pthread.dylib             0x00007ff81b7cc253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff81b7c7bef thread_start + 15",
+      "time" : {
+        "start" : 1739231039135,
+        "stop" : 1739231054554,
+        "duration" : 15419
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e40a80b7dd25b067.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,143 @@
+{
+  "uid" : "355aaa368dd36ba4",
+  "name" : "test_product_prices",
+  "fullName" : "tests.test_content#test_product_prices",
+  "historyId" : "42c23d6e64ba20232a3fe86db9c8260b",
+  "time" : {
+    "start" : 1739231238332,
+    "stop" : 1739231238352,
+    "duration" : 20
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Товары не найдены\nassert 0 > 0\n +  where 0 = len([])",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"d19e167f029d6d5ce507cfebeb601b0e\")>\n\n    def test_product_prices(driver):\n        wait = WebDriverWait(driver, 15)  # Увеличим timeout\n        wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, \".card\")))\n    \n        prices = driver.find_elements(By.CSS_SELECTOR, \".card .price-container\")\n    \n>       assert len(prices) > 0, \"Товары не найдены\"\nE       AssertionError: Товары не найдены\nE       assert 0 > 0\nE        +  where 0 = len([])\n\ntests/test_content.py:30: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1739231238331,
+      "stop" : 1739231238331,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033747,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1739231033747,
+      "stop" : 1739231033747,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033746,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1739231235371,
+      "stop" : 1739231237689,
+      "duration" : 2318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1739231238458,
+      "stop" : 1739231238641,
+      "duration" : 183
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_content"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "91139-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_content"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "355aaa368dd36ba4.json",
+  "parameterValues" : [ ]
+}

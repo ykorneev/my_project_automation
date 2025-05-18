@@ -1,0 +1,143 @@
+{
+  "uid" : "c17681cd2394deb9",
+  "name" : "test_incorrect_card_number",
+  "fullName" : "tests.test_add_items_to_cart_and_order_placement#test_incorrect_card_number",
+  "historyId" : "357f8f66240ebb7a22ad5356f2512ea3",
+  "time" : {
+    "start" : 1739233179862,
+    "stop" : 1739233195050,
+    "duration" : 15188
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \nStacktrace:\n0   chromedriver                        0x0000000109bc3bc8 chromedriver + 5766088\n1   chromedriver                        0x0000000109bbb7ea chromedriver + 5732330\n2   chromedriver                        0x00000001096a9680 chromedriver + 415360\n3   chromedriver                        0x00000001096fad7d chromedriver + 748925\n4   chromedriver                        0x00000001096faf21 chromedriver + 749345\n5   chromedriver                        0x000000010974b184 chromedriver + 1077636\n6   chromedriver                        0x000000010972107d chromedriver + 905341\n7   chromedriver                        0x00000001097483e7 chromedriver + 1065959\n8   chromedriver                        0x0000000109720e23 chromedriver + 904739\n9   chromedriver                        0x00000001096ecbea chromedriver + 691178\n10  chromedriver                        0x00000001096edd41 chromedriver + 695617\n11  chromedriver                        0x0000000109b87100 chromedriver + 5517568\n12  chromedriver                        0x0000000109b8b040 chromedriver + 5533760\n13  chromedriver                        0x0000000109b68c87 chromedriver + 5393543\n14  chromedriver                        0x0000000109b8bacb chromedriver + 5536459\n15  chromedriver                        0x0000000109b57544 chromedriver + 5322052\n16  chromedriver                        0x0000000109ba96e8 chromedriver + 5658344\n17  chromedriver                        0x0000000109ba98af chromedriver + 5658799\n18  chromedriver                        0x0000000109bbb3c8 chromedriver + 5731272\n19  libsystem_pthread.dylib             0x00007ff81b7cc253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff81b7c7bef thread_start + 15",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"838f59e26efe80c5d4f2f62b1a720327\")>\n\n    def test_incorrect_card_number(driver):\n        wait = WebDriverWait(driver, 15)\n                                                                                                                            # Открытие категории \"Laptops\"\n>       wait.until(EC.element_to_be_clickable((By.LINK_TEXT, \"Laptops\"))).click()                                           # Выбор \"MacBook air\"\n\ntests/test_add_items_to_cart_and_order_placement.py:135: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"838f59e26efe80c5d4f2f62b1a720327\")>, method = <function element_to_be_clickable.<locals>._predicate at 0x10de24220>, message = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Wait until the method returns a value that is not False.\n    \n        Calls the method provided with the driver as an argument until the\n        return value does not evaluate to ``False``.\n    \n        Parameters:\n        ----------\n        method: callable(WebDriver)\n            - A callable object that takes a WebDriver instance as an argument.\n    \n        message: str\n            - Optional message for :exc:`TimeoutException`\n    \n        Return:\n        -------\n        object: T\n            - The result of the last call to `method`\n    \n        Raises:\n        -------\n        TimeoutException\n            - If 'method' does not return a truthy value within the WebDriverWait\n            object's timeout\n    \n        Example:\n        --------\n        >>> from selenium.webdriver.common.by import By\n        >>> from selenium.webdriver.support.ui import WebDriverWait\n        >>> from selenium.webdriver.support import expected_conditions as EC\n    \n        # Wait until an element is visible on the page\n        >>> wait = WebDriverWait(driver, 10)\n        >>> element = wait.until(EC.visibility_of_element_located((By.ID, \"exampleId\")))\n        >>> print(element.text)\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            if time.monotonic() > end_time:\n                break\n            time.sleep(self._poll)\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message: \nE       Stacktrace:\nE       0   chromedriver                        0x0000000109bc3bc8 chromedriver + 5766088\nE       1   chromedriver                        0x0000000109bbb7ea chromedriver + 5732330\nE       2   chromedriver                        0x00000001096a9680 chromedriver + 415360\nE       3   chromedriver                        0x00000001096fad7d chromedriver + 748925\nE       4   chromedriver                        0x00000001096faf21 chromedriver + 749345\nE       5   chromedriver                        0x000000010974b184 chromedriver + 1077636\nE       6   chromedriver                        0x000000010972107d chromedriver + 905341\nE       7   chromedriver                        0x00000001097483e7 chromedriver + 1065959\nE       8   chromedriver                        0x0000000109720e23 chromedriver + 904739\nE       9   chromedriver                        0x00000001096ecbea chromedriver + 691178\nE       10  chromedriver                        0x00000001096edd41 chromedriver + 695617\nE       11  chromedriver                        0x0000000109b87100 chromedriver + 5517568\nE       12  chromedriver                        0x0000000109b8b040 chromedriver + 5533760\nE       13  chromedriver                        0x0000000109b68c87 chromedriver + 5393543\nE       14  chromedriver                        0x0000000109b8bacb chromedriver + 5536459\nE       15  chromedriver                        0x0000000109b57544 chromedriver + 5322052\nE       16  chromedriver                        0x0000000109ba96e8 chromedriver + 5658344\nE       17  chromedriver                        0x0000000109ba98af chromedriver + 5658799\nE       18  chromedriver                        0x0000000109bbb3c8 chromedriver + 5731272\nE       19  libsystem_pthread.dylib             0x00007ff81b7cc253 _pthread_start + 99\nE       20  libsystem_pthread.dylib             0x00007ff81b7c7bef thread_start + 15\n\n.venv/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:146: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1739233179862,
+      "stop" : 1739233179862,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1739233098888,
+      "stop" : 1739233098888,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1739233098888,
+      "stop" : 1739233101213,
+      "duration" : 2325
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1739233098888,
+      "stop" : 1739233098888,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1739233098888,
+      "stop" : 1739233098888,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1739233286129,
+      "stop" : 1739233286369,
+      "duration" : 240
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_add_items_to_cart_and_order_placement"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "94046-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_add_items_to_cart_and_order_placement"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c17681cd2394deb9.json",
+  "parameterValues" : [ ]
+}

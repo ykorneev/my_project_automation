@@ -1,0 +1,114 @@
+{
+  "uid" : "66d6114c7eeb474",
+  "name" : "test_site_functionality[safari]",
+  "fullName" : "tests.test_cross_browser#test_site_functionality",
+  "historyId" : "931656feabd7b3eac7547ce0c367a38a",
+  "time" : {
+    "start" : 1739231247889,
+    "stop" : 1739231250145,
+    "duration" : 2256
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033747,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1739231033747,
+      "stop" : 1739231033747,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1739231247888,
+      "stop" : 1739231247888,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033746,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_cross_browser"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "91139-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cross_browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "'safari'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "66d6114c7eeb474.json",
+  "parameterValues" : [ "'safari'" ]
+}

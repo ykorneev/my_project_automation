@@ -1,0 +1,114 @@
+{
+  "uid" : "10950b3840adbac7",
+  "name" : "test_site_functionality[firefox]",
+  "fullName" : "tests.test_cross_browser#test_site_functionality",
+  "historyId" : "420c73fe471733d74483c34ed788bd8e",
+  "time" : {
+    "start" : 1739231241206,
+    "stop" : 1739231247880,
+    "duration" : 6674
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033747,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1739231033747,
+      "stop" : 1739231033747,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1739231033746,
+      "stop" : 1739231033746,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1739231241205,
+      "stop" : 1739231241206,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_cross_browser"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "91139-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cross_browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "'firefox'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "10950b3840adbac7.json",
+  "parameterValues" : [ "'firefox'" ]
+}

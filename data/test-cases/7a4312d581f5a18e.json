@@ -1,0 +1,116 @@
+{
+  "uid" : "7a4312d581f5a18e",
+  "name" : "test_site_functionality[edge]",
+  "fullName" : "tests.test_cross_browser#test_site_functionality",
+  "historyId" : "4a094fe4beff59c6b48fa8194a259b45",
+  "time" : {
+    "start" : 1741033021420,
+    "stop" : 1741033069214,
+    "duration" : 47794
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: Can not connect to the Service /Users/yurakorneev/.cache/selenium/msedgedriver/mac64/133.0.3065.92/msedgedriver",
+  "statusTrace" : "browser = 'edge'\n\n    @pytest.mark.parametrize('browser', ['chrome', 'firefox', 'safari', 'edge'])\n    def test_site_functionality(browser):\n>       driver = get_driver(browser)\n\ntests/test_cross_browser.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ntests/test_cross_browser.py:16: in get_driver\n    return webdriver.Edge(options=options)\n.venv/lib/python3.12/site-packages/selenium/webdriver/edge/webdriver.py:45: in __init__\n    super().__init__(\n.venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py:55: in __init__\n    self.service.start()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.edge.service.Service object at 0x10d4dccb0>\n\n    def start(self) -> None:\n        \"\"\"Starts the Service.\n    \n        :Exceptions:\n         - WebDriverException : Raised either when it can't start the service\n           or when it can't connect to the service\n        \"\"\"\n        if self._path is None:\n            raise WebDriverException(\"Service path cannot be None.\")\n        self._start_process(self._path)\n    \n        count = 0\n        while True:\n            self.assert_process_still_running()\n            if self.is_connectable():\n                break\n            # sleep increasing: 0.01, 0.06, 0.11, 0.16, 0.21, 0.26, 0.31, 0.36, 0.41, 0.46, 0.5\n            sleep(min(0.01 + 0.05 * count, 0.5))\n            count += 1\n            if count == 70:\n>               raise WebDriverException(f\"Can not connect to the Service {self._path}\")\nE               selenium.common.exceptions.WebDriverException: Message: Can not connect to the Service /Users/yurakorneev/.cache/selenium/msedgedriver/mac64/133.0.3065.92/msedgedriver\n\n.venv/lib/python3.12/site-packages/selenium/webdriver/common/service.py:120: WebDriverException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1741032905333,
+      "stop" : 1741032905333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1741032905333,
+      "stop" : 1741032905333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1741033021419,
+      "stop" : 1741033021419,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1741032905333,
+      "stop" : 1741032905333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_cross_browser"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "25107-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_cross_browser"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "'edge'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7a4312d581f5a18e.json",
+  "parameterValues" : [ "'edge'" ]
+}

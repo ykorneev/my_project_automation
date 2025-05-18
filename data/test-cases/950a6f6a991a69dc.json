@@ -1,0 +1,143 @@
+{
+  "uid" : "950a6f6a991a69dc",
+  "name" : "Фильтрация товаров по категории 'Phones'",
+  "fullName" : "tests.test_categories_and_products#test_filters_phones",
+  "historyId" : "8cee2d5ec31544869b51ef9cacfe02e3",
+  "time" : {
+    "start" : 1747603652450,
+    "stop" : 1747603652450,
+    "duration" : 0
+  },
+  "description" : "Проверка, что после выбора категории 'Phones' отображаются соответствующие товары",
+  "descriptionHtml" : "<p>Проверка, что после выбора категории 'Phones' отображаются соответствующие товары</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+  "statusTrace" : "('/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py', 79, \"Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\")",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1747603652451,
+      "stop" : 1747603652451,
+      "duration" : 0
+    },
+    "status" : "skipped",
+    "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 139, in _multicall\n    teardown.throw(exception)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 53, in run_old_style_hookwrapper\n    return result.get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_result.py\", line 103, in get_result\n    raise exc.with_traceback(tb)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 121, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py\", line 79, in _skip_sensitive\n    pytest.skip(\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652390,
+      "duration" : 245
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_categories_and_products"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmf6wy0o8zjz"
+  }, {
+    "name" : "thread",
+    "value" : "2511-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_categories_and_products"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c1c9fafe7faa5d6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032998607,
+        "stop" : 1741032998687,
+        "duration" : 80
+      }
+    }, {
+      "uid" : "bd685d2dd29529e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1739233299445,
+        "stop" : 1739233299547,
+        "duration" : 102
+      }
+    }, {
+      "uid" : "4e43a8d22bd1da96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1739231232690,
+        "stop" : 1739231232781,
+        "duration" : 91
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "950a6f6a991a69dc.json",
+  "parameterValues" : [ ]
+}

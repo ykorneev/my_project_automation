@@ -1,0 +1,521 @@
+[ {
+  "uid" : "fcb5f275aaac428d",
+  "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+  "time" : {
+    "start" : 1747603652472,
+    "stop" : 1747603652472,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "49b000c86662c7f3",
+  "name" : "test_page_products",
+  "time" : {
+    "start" : 1741033071757,
+    "stop" : 1741033073344,
+    "duration" : 1587
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9daba19e956d495f",
+  "name" : "test_filter_monitors",
+  "time" : {
+    "start" : 1745242630498,
+    "stop" : 1745242630574,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e02109673dc56c42",
+  "name" : "Добавление товара в корзину авторизованным пользователем и оформление заказа",
+  "time" : {
+    "start" : 1747603652419,
+    "stop" : 1747603652419,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "66e34c89999bd32",
+  "name" : "Открытие карточки товара",
+  "time" : {
+    "start" : 1747603652456,
+    "stop" : 1747603652456,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "73c166ab3bfde4c5",
+  "name" : "Фильтрация товаров по категории 'Phones'",
+  "time" : {
+    "start" : 1747603652427,
+    "stop" : 1747603652427,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "42c1e08e2c6016b",
+  "name" : "Регистрация с уже существующим логином",
+  "time" : {
+    "start" : 1747603652446,
+    "stop" : 1747603652446,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f088262253545cbd",
+  "name" : "Проверка работы кнопки 'Next'",
+  "time" : {
+    "start" : 1747603652464,
+    "stop" : 1747603652464,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e344eb1507f598f5",
+  "name" : "Проверка входа с неверным паролем",
+  "time" : {
+    "start" : 1747603652442,
+    "stop" : 1747603652442,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "db78669b94678f1b",
+  "name" : "Оформление заказа с пустым полем 'Country'",
+  "time" : {
+    "start" : 1747603652425,
+    "stop" : 1747603652425,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f5449f1328c4f410",
+  "name" : "Проверка отображения кнопки 'Log in'",
+  "time" : {
+    "start" : 1747603652436,
+    "stop" : 1747603652436,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "950a6f6a991a69dc",
+  "name" : "Фильтрация товаров по категории 'Phones'",
+  "time" : {
+    "start" : 1747603652450,
+    "stop" : 1747603652450,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d6c33e77513335f",
+  "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+  "time" : {
+    "start" : 1747603652466,
+    "stop" : 1747603652466,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "68cf33f2b857c713",
+  "name" : "test_open_card_products",
+  "time" : {
+    "start" : 1741032999117,
+    "stop" : 1741033000661,
+    "duration" : 1544
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b676e711987ec05",
+  "name" : "Проверка выхода из системы",
+  "time" : {
+    "start" : 1747603652440,
+    "stop" : 1747603652440,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "70b0089924c046b8",
+  "name" : "Проверка входа с неверным логином",
+  "time" : {
+    "start" : 1747603652444,
+    "stop" : 1747603652444,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b4e7bd48004bed7b",
+  "name" : "Фильтрация товаров по категории 'Laptops'",
+  "time" : {
+    "start" : 1747603652448,
+    "stop" : 1747603652448,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fce3b6c7fa8c3d32",
+  "name" : "Загрузка главной страницы",
+  "time" : {
+    "start" : 1747603652415,
+    "stop" : 1747603652415,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "df1d85a0199c9619",
+  "name" : "Возврат на главную страницу по клику на логотип",
+  "time" : {
+    "start" : 1747603652454,
+    "stop" : 1747603652454,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f10b108e401276d3",
+  "name" : "Проверка отображения кнопки 'Sign up'",
+  "time" : {
+    "start" : 1747603652434,
+    "stop" : 1747603652434,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c15e28a79c1afd73",
+  "name" : "test_order_placement_with_empty_fields",
+  "time" : {
+    "start" : 1741032945412,
+    "stop" : 1741032948926,
+    "duration" : 3514
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a45c6bc34e5cbbf",
+  "name" : "test_logo",
+  "time" : {
+    "start" : 1741032988121,
+    "stop" : 1741032988144,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d79d1afd1c76b900",
+  "name" : "test_filter_phones",
+  "time" : {
+    "start" : 1745242630413,
+    "stop" : 1745242630495,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34b095376186dbac",
+  "name" : "Модальное окно 'About Us'",
+  "time" : {
+    "start" : 1747603652458,
+    "stop" : 1747603652458,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e40a80b7dd25b067",
+  "name" : "Добавление нескольких товаров в корзину",
+  "time" : {
+    "start" : 1747603652394,
+    "stop" : 1747603652394,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "fa22db27302f7115",
+  "name" : "Оформление заказа",
+  "time" : {
+    "start" : 1747603652408,
+    "stop" : 1747603652408,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "cad44b8a29198186",
+  "name" : "Замер времени загрузки главной страницы",
+  "time" : {
+    "start" : 1747603652474,
+    "stop" : 1747603652474,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b4b1510c262cd1ae",
+  "name" : "Фильтрация товаров по категории 'Laptops'",
+  "time" : {
+    "start" : 1747603652429,
+    "stop" : 1747603652429,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7fcbb2bccd643bb2",
+  "name" : "Оформление заказа с пустым полем карты",
+  "time" : {
+    "start" : 1747603652421,
+    "stop" : 1747603652421,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c8a276f8742f5680",
+  "name" : "Отправка сообщения через форму Contact Us",
+  "time" : {
+    "start" : 1747603652413,
+    "stop" : 1747603652413,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "21ab06d51e2a4a31",
+  "name" : "test_about_us_page",
+  "time" : {
+    "start" : 1741033000664,
+    "stop" : 1741033000675,
+    "duration" : 11
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "a55b8974b318eb2c",
+  "name" : "test_add_correct_item_to_cart",
+  "time" : {
+    "start" : 1741032932664,
+    "stop" : 1741032936068,
+    "duration" : 3404
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71dd4497cf775339",
+  "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+  "time" : {
+    "start" : 1747603652468,
+    "stop" : 1747603652468,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ae8e56fd043a6310",
+  "name" : "Замер времени загрузки страницы товара",
+  "time" : {
+    "start" : 1747603652476,
+    "stop" : 1747603652476,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "47aff6f20252f5be",
+  "name" : "Фильтрация товаров по категории 'Monitors'",
+  "time" : {
+    "start" : 1747603652431,
+    "stop" : 1747603652431,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2ff7e3012fe5bc97",
+  "name" : "Проверка загрузки главной страницы",
+  "time" : {
+    "start" : 1747603652432,
+    "stop" : 1747603652432,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "af83f0f9768c70be",
+  "name" : "test_registration_form",
+  "time" : {
+    "start" : 1741032988190,
+    "stop" : 1741032989723,
+    "duration" : 1533
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abd611bb56927a73",
+  "name" : "Авторизация",
+  "time" : {
+    "start" : 1747603652410,
+    "stop" : 1747603652410,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c8fb163f28d05095",
+  "name" : "Добавление одного товара в корзину",
+  "time" : {
+    "start" : 1747603652145,
+    "stop" : 1747603652145,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f0a42f932e84bd62",
+  "name" : "Оформление заказа с пустым полем имени",
+  "time" : {
+    "start" : 1747603652423,
+    "stop" : 1747603652423,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "5a45d3a3431a3c8e",
+  "name" : "test_contact_us",
+  "time" : {
+    "start" : 1745242643532,
+    "stop" : 1745242644154,
+    "duration" : 622
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b2d0351bb05c317",
+  "name" : "test_contact_us_page",
+  "time" : {
+    "start" : 1741033000706,
+    "stop" : 1741033000719,
+    "duration" : 13
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c42cd158d7162bc8",
+  "name" : "test_back_to_home_page",
+  "time" : {
+    "start" : 1745242630576,
+    "stop" : 1745242630967,
+    "duration" : 391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f59541aef06782b1",
+  "name" : "Фильтрация товаров по категории 'Monitors'",
+  "time" : {
+    "start" : 1747603652452,
+    "stop" : 1747603652452,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "3510c843091f7ebd",
+  "name" : "test_cart_is_empty_after_purchase",
+  "time" : {
+    "start" : 1741032971752,
+    "stop" : 1741032976695,
+    "duration" : 4943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9512fd4e9cda0c7",
+  "name" : "Проверка отображения изображений товаров",
+  "time" : {
+    "start" : 1747603652460,
+    "stop" : 1747603652460,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "840bb3f1dbe20d19",
+  "name" : "Проверка входа в систему",
+  "time" : {
+    "start" : 1747603652438,
+    "stop" : 1747603652438,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "648fe88bce54551d",
+  "name" : "Удаление товара из корзины",
+  "time" : {
+    "start" : 1747603652406,
+    "stop" : 1747603652406,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "1d2e10981e53f255",
+  "name" : "Выход из системы",
+  "time" : {
+    "start" : 1747603652411,
+    "stop" : 1747603652411,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "881a5100049bf47e",
+  "name" : "Фильтрация товаров по категории 'Laptops'",
+  "time" : {
+    "start" : 1747603652417,
+    "stop" : 1747603652417,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f32e13fd3ab7f54",
+  "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+  "time" : {
+    "start" : 1747603652470,
+    "stop" : 1747603652470,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "5af941707b00b557",
+  "name" : "Проверка отображения цен товаров",
+  "time" : {
+    "start" : 1747603652462,
+    "stop" : 1747603652462,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

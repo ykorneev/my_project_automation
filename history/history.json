@@ -1,0 +1,1084 @@
+{
+  "277f454e705da17477eaf61c23237a43" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f10b108e401276d3",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/f10b108e401276d3",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652434,
+        "stop" : 1747603652434,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dd90634265e456abdf088d032fb4188c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "df1d85a0199c9619",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/df1d85a0199c9619",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652454,
+        "stop" : 1747603652454,
+        "duration" : 0
+      }
+    } ]
+  },
+  "931656feabd7b3eac7547ce0c367a38a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f32e13fd3ab7f54",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/f32e13fd3ab7f54",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652470,
+        "stop" : 1747603652470,
+        "duration" : 0
+      }
+    } ]
+  },
+  "0d1e9ba625ab83adf5719fb7c955667d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c8a276f8742f5680",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/c8a276f8742f5680",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652413,
+        "stop" : 1747603652413,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8cee2d5ec31544869b51ef9cacfe02e3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "950a6f6a991a69dc",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/950a6f6a991a69dc",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652450,
+        "stop" : 1747603652450,
+        "duration" : 0
+      }
+    } ]
+  },
+  "da9a327b8662b48a1d7c79b3deeb82f0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "70b0089924c046b8",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/70b0089924c046b8",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652444,
+        "stop" : 1747603652444,
+        "duration" : 0
+      }
+    } ]
+  },
+  "62a30f4dd8dd32ae634069696befc8bf" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e02109673dc56c42",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/e02109673dc56c42",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652419,
+        "stop" : 1747603652419,
+        "duration" : 0
+      }
+    } ]
+  },
+  "64ed14bba4e56324e103f70040f0793d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "840bb3f1dbe20d19",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/840bb3f1dbe20d19",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652438,
+        "stop" : 1747603652438,
+        "duration" : 0
+      }
+    } ]
+  },
+  "49c117952a3c1a03e1d17ea4aed03c97" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5a45d3a3431a3c8e",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/5a45d3a3431a3c8e",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'ContactPage' object has no attribute 'EMAIL_INPUT'",
+      "time" : {
+        "start" : 1745242643532,
+        "stop" : 1745242644154,
+        "duration" : 622
+      }
+    } ]
+  },
+  "5e49df702012f73488f6874393a7144a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d6c33e77513335f",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/d6c33e77513335f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652466,
+        "stop" : 1747603652466,
+        "duration" : 0
+      }
+    } ]
+  },
+  "c9ec190bdff8fedb3ecf48fae87e2e2c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f5449f1328c4f410",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/f5449f1328c4f410",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652436,
+        "stop" : 1747603652436,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d87b1b87bbc3f871c60f3c81e35386a1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "881a5100049bf47e",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/881a5100049bf47e",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652417,
+        "stop" : 1747603652417,
+        "duration" : 0
+      }
+    } ]
+  },
+  "db69b824624fe484a74d9f93c99ca7ea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "648fe88bce54551d",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/648fe88bce54551d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652406,
+        "stop" : 1747603652406,
+        "duration" : 0
+      }
+    } ]
+  },
+  "078356bf29910b072bde57b8ea442a99" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3510c843091f7ebd",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/3510c843091f7ebd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032971752,
+        "stop" : 1741032976695,
+        "duration" : 4943
+      }
+    } ]
+  },
+  "4f56536569b493e1d84d34447b1fce5e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c15e28a79c1afd73",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/c15e28a79c1afd73",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032945412,
+        "stop" : 1741032948926,
+        "duration" : 3514
+      }
+    } ]
+  },
+  "07c85fb85f09dd1e43c47ac864ef0ed6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a9512fd4e9cda0c7",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/a9512fd4e9cda0c7",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652460,
+        "stop" : 1747603652460,
+        "duration" : 0
+      }
+    } ]
+  },
+  "648b78c2b78bf7c947904e8ff1648e3e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cad44b8a29198186",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/cad44b8a29198186",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652474,
+        "stop" : 1747603652474,
+        "duration" : 0
+      }
+    } ]
+  },
+  "da074ce85e9bc250b041f1605fbe9f49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1d2e10981e53f255",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/1d2e10981e53f255",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652411,
+        "stop" : 1747603652411,
+        "duration" : 0
+      }
+    } ]
+  },
+  "7f986dc7c27b00fd4d96cd5df5d75e8a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "47aff6f20252f5be",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/47aff6f20252f5be",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652431,
+        "stop" : 1747603652431,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d288eff0058b0207cccb010b908430ec" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f088262253545cbd",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/f088262253545cbd",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652464,
+        "stop" : 1747603652464,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4a094fe4beff59c6b48fa8194a259b45" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fcb5f275aaac428d",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/fcb5f275aaac428d",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652472,
+        "stop" : 1747603652472,
+        "duration" : 0
+      }
+    } ]
+  },
+  "e68c7d3202d96066f1056d6f94f29498" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "21ab06d51e2a4a31",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/21ab06d51e2a4a31",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/nav/div[1]/ul/li[3]/a\"}\n  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n0   chromedriver                        0x000000010d123708 chromedriver + 5969672\n1   chromedriver                        0x000000010d11b32a chromedriver + 5935914\n2   chromedriver                        0x000000010cbd7650 chromedriver + 415312\n3   chromedriver                        0x000000010cc28e94 chromedriver + 749204\n4   chromedriver                        0x000000010cc29041 chromedriver + 749633\n5   chromedriver                        0x000000010cc79294 chromedriver + 1077908\n6   chromedriver                        0x000000010cc4f19d chromedriver + 905629\n7   chromedriver                        0x000000010cc764f7 chromedriver + 1066231\n8   chromedriver                        0x000000010cc4ef43 chromedriver + 905027\n9   chromedriver                        0x000000010cc1acea chromedriver + 691434\n10  chromedriver                        0x000000010cc1be41 chromedriver + 695873\n11  chromedriver                        0x000000010d0e6910 chromedriver + 5720336\n12  chromedriver                        0x000000010d0ea850 chromedriver + 5736528\n13  chromedriver                        0x000000010d0c7c07 chromedriver + 5594119\n14  chromedriver                        0x000000010d0eb2fb chromedriver + 5739259\n15  chromedriver                        0x000000010d0b6484 chromedriver + 5522564\n16  chromedriver                        0x000000010d1091d8 chromedriver + 5861848\n17  chromedriver                        0x000000010d10939f chromedriver + 5862303\n18  chromedriver                        0x000000010d11af08 chromedriver + 5934856\n19  libsystem_pthread.dylib             0x00007ff818385253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff818380bef thread_start + 15",
+      "time" : {
+        "start" : 1741033000664,
+        "stop" : 1741033000675,
+        "duration" : 11
+      }
+    } ]
+  },
+  "5b97d51291e302f919d6b6fdad8bd56d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "49b000c86662c7f3",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/49b000c86662c7f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741033071757,
+        "stop" : 1741033073344,
+        "duration" : 1587
+      }
+    } ]
+  },
+  "4058b3297da0b6d72c02c35932a065f2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d79d1afd1c76b900",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/d79d1afd1c76b900",
+      "status" : "passed",
+      "time" : {
+        "start" : 1745242630413,
+        "stop" : 1745242630495,
+        "duration" : 82
+      }
+    } ]
+  },
+  "48eb0e991fde2aab51c5d6487f8b32fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "68cf33f2b857c713",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/68cf33f2b857c713",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032999117,
+        "stop" : 1741033000661,
+        "duration" : 1544
+      }
+    } ]
+  },
+  "d34793aaacded1e79f1b26d9dbcc9afd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fce3b6c7fa8c3d32",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/fce3b6c7fa8c3d32",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652415,
+        "stop" : 1747603652415,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d492ec8626a9e3519f682ef2c51b75b2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e40a80b7dd25b067",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/e40a80b7dd25b067",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652394,
+        "stop" : 1747603652394,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9c97eeb63fb71ddb27ad771434b4948a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "abd611bb56927a73",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/abd611bb56927a73",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652410,
+        "stop" : 1747603652410,
+        "duration" : 0
+      }
+    } ]
+  },
+  "d4d36b733f3157cd549e2b6264c130dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e344eb1507f598f5",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/e344eb1507f598f5",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652442,
+        "stop" : 1747603652442,
+        "duration" : 0
+      }
+    } ]
+  },
+  "3a7d3e0f59050218bf09ecb799b6155e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c8fb163f28d05095",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/c8fb163f28d05095",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652145,
+        "stop" : 1747603652145,
+        "duration" : 0
+      }
+    } ]
+  },
+  "563d21b3e2a2799da651a2a0ae8762a0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b2d0351bb05c317",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/b2d0351bb05c317",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/nav/div[1]/ul/li[2]/a\"}\n  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n0   chromedriver                        0x000000010d123708 chromedriver + 5969672\n1   chromedriver                        0x000000010d11b32a chromedriver + 5935914\n2   chromedriver                        0x000000010cbd7650 chromedriver + 415312\n3   chromedriver                        0x000000010cc28e94 chromedriver + 749204\n4   chromedriver                        0x000000010cc29041 chromedriver + 749633\n5   chromedriver                        0x000000010cc79294 chromedriver + 1077908\n6   chromedriver                        0x000000010cc4f19d chromedriver + 905629\n7   chromedriver                        0x000000010cc764f7 chromedriver + 1066231\n8   chromedriver                        0x000000010cc4ef43 chromedriver + 905027\n9   chromedriver                        0x000000010cc1acea chromedriver + 691434\n10  chromedriver                        0x000000010cc1be41 chromedriver + 695873\n11  chromedriver                        0x000000010d0e6910 chromedriver + 5720336\n12  chromedriver                        0x000000010d0ea850 chromedriver + 5736528\n13  chromedriver                        0x000000010d0c7c07 chromedriver + 5594119\n14  chromedriver                        0x000000010d0eb2fb chromedriver + 5739259\n15  chromedriver                        0x000000010d0b6484 chromedriver + 5522564\n16  chromedriver                        0x000000010d1091d8 chromedriver + 5861848\n17  chromedriver                        0x000000010d10939f chromedriver + 5862303\n18  chromedriver                        0x000000010d11af08 chromedriver + 5934856\n19  libsystem_pthread.dylib             0x00007ff818385253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff818380bef thread_start + 15",
+      "time" : {
+        "start" : 1741033000706,
+        "stop" : 1741033000719,
+        "duration" : 13
+      }
+    } ]
+  },
+  "8fb2b6fc7a83ca92540b138962df69f3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "73c166ab3bfde4c5",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/73c166ab3bfde4c5",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652427,
+        "stop" : 1747603652427,
+        "duration" : 0
+      }
+    } ]
+  },
+  "420c73fe471733d74483c34ed788bd8e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "71dd4497cf775339",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/71dd4497cf775339",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652468,
+        "stop" : 1747603652468,
+        "duration" : 0
+      }
+    } ]
+  },
+  "2a6c5e171ee581a2ecea4f28559d15fd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "42c1e08e2c6016b",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/42c1e08e2c6016b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652446,
+        "stop" : 1747603652446,
+        "duration" : 0
+      }
+    } ]
+  },
+  "1c110b8dd1f4eebc47f2270059acd38f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ae8e56fd043a6310",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/ae8e56fd043a6310",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652476,
+        "stop" : 1747603652476,
+        "duration" : 0
+      }
+    } ]
+  },
+  "357f8f66240ebb7a22ad5356f2512ea3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7fcbb2bccd643bb2",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/7fcbb2bccd643bb2",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652421,
+        "stop" : 1747603652421,
+        "duration" : 0
+      }
+    } ]
+  },
+  "08154c504b856a567a2e6812c1bbd2b6" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9daba19e956d495f",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/9daba19e956d495f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1745242630498,
+        "stop" : 1745242630574,
+        "duration" : 76
+      }
+    } ]
+  },
+  "17c54c8943785dc49fe70debee7e01f3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "af83f0f9768c70be",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/af83f0f9768c70be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032988190,
+        "stop" : 1741032989723,
+        "duration" : 1533
+      }
+    } ]
+  },
+  "003729bba088a74c65389c3bc9c529b1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a55b8974b318eb2c",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/a55b8974b318eb2c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032932664,
+        "stop" : 1741032936068,
+        "duration" : 3404
+      }
+    } ]
+  },
+  "ff3cbb79d89f95e24388be64c0134557" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f59541aef06782b1",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/f59541aef06782b1",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652452,
+        "stop" : 1747603652452,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a0ad62a5ecb6ac377f730ecb15738a25" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c42cd158d7162bc8",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/c42cd158d7162bc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1745242630576,
+        "stop" : 1745242630967,
+        "duration" : 391
+      }
+    } ]
+  },
+  "364cd68de0711a94ac402335daafaac5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2ff7e3012fe5bc97",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/2ff7e3012fe5bc97",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652432,
+        "stop" : 1747603652432,
+        "duration" : 0
+      }
+    } ]
+  },
+  "38eab147e6c99860d7ed3b11ac737471" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4b1510c262cd1ae",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/b4b1510c262cd1ae",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652429,
+        "stop" : 1747603652429,
+        "duration" : 0
+      }
+    } ]
+  },
+  "8eb4f1f8d1e752c4efabfb2b65eb2b4f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b676e711987ec05",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/b676e711987ec05",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652440,
+        "stop" : 1747603652440,
+        "duration" : 0
+      }
+    } ]
+  },
+  "c6dab9aa6f4f995723efefbb4e1fb899" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0a42f932e84bd62",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/f0a42f932e84bd62",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652423,
+        "stop" : 1747603652423,
+        "duration" : 0
+      }
+    } ]
+  },
+  "2567705bd60350ef6ff98ae9ccad8115" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "34b095376186dbac",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/34b095376186dbac",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652458,
+        "stop" : 1747603652458,
+        "duration" : 0
+      }
+    } ]
+  },
+  "41ff0ac2063ce2b15cb56d0ae01df620" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b4e7bd48004bed7b",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/b4e7bd48004bed7b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652448,
+        "stop" : 1747603652448,
+        "duration" : 0
+      }
+    } ]
+  },
+  "04b287d59a587949f8af11b084d04fef" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a45c6bc34e5cbbf",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/9a45c6bc34e5cbbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032988121,
+        "stop" : 1741032988144,
+        "duration" : 23
+      }
+    } ]
+  },
+  "42c23d6e64ba20232a3fe86db9c8260b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5af941707b00b557",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/5af941707b00b557",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652462,
+        "stop" : 1747603652462,
+        "duration" : 0
+      }
+    } ]
+  },
+  "a99c2118d9f0c2c04146137f35ac26a5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fa22db27302f7115",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/fa22db27302f7115",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652408,
+        "stop" : 1747603652408,
+        "duration" : 0
+      }
+    } ]
+  },
+  "3cdcca8a1c04263f5fe4987c5581e6e5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "db78669b94678f1b",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/db78669b94678f1b",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652425,
+        "stop" : 1747603652425,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4185b7c21f79fc52b034ad6c889d60ca" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "66e34c89999bd32",
+      "reportUrl" : "https://ykorneev.github.io/my_project_automation/16//#testresult/66e34c89999bd32",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+      "time" : {
+        "start" : 1747603652456,
+        "stop" : 1747603652456,
+        "duration" : 0
+      }
+    } ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "uid" : "d79d1afd1c76b900",
+  "name" : "test_filter_phones",
+  "fullName" : "tests.test_categories_and_products#test_filter_phones",
+  "historyId" : "4058b3297da0b6d72c02c35932a065f2",
+  "time" : {
+    "start" : 1745242630413,
+    "stop" : 1745242630495,
+    "duration" : 82
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1745242496989,
+      "stop" : 1745242496989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1745242627554,
+      "stop" : 1745242629728,
+      "duration" : 2174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1745242630412,
+      "stop" : 1745242630412,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1745242496988,
+      "stop" : 1745242496989,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1745242496989,
+      "stop" : 1745242496989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1745242644166,
+      "stop" : 1745242644282,
+      "duration" : 116
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_categories_and_products"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "4945-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_categories_and_products"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b78c020670b16321",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741821743331,
+        "stop" : 1741821743418,
+        "duration" : 87
+      }
+    }, {
+      "uid" : "e77c71368d82d14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741818398629,
+        "stop" : 1741818398722,
+        "duration" : 93
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d79d1afd1c76b900.json",
+  "parameterValues" : [ ]
+}

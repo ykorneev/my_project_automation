@@ -1,0 +1,175 @@
+{
+  "uid" : "49b000c86662c7f3",
+  "name" : "test_page_products",
+  "fullName" : "tests.test_perfomance#test_page_products",
+  "historyId" : "5b97d51291e302f919d6b6fdad8bd56d",
+  "time" : {
+    "start" : 1741033071757,
+    "stop" : 1741033073344,
+    "duration" : 1587
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1741032905333,
+      "stop" : 1741032905333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1741033071756,
+      "stop" : 1741033071756,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1741032905333,
+      "stop" : 1741032905333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1741032905333,
+      "stop" : 1741032905333,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1741033069233,
+      "stop" : 1741033071174,
+      "duration" : 1941
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ec35d6a7fc701bdf",
+      "name" : "stdout",
+      "source" : "ec35d6a7fc701bdf.txt",
+      "type" : "text/plain",
+      "size" : 77
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1741033073345,
+      "stop" : 1741033073462,
+      "duration" : 117
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_perfomance"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "25107-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_perfomance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e2e78577b3052d48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1739233322318,
+        "stop" : 1739233324348,
+        "duration" : 2030
+      }
+    }, {
+      "uid" : "dfae95a3a8de0a20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1739231255668,
+        "stop" : 1739231257206,
+        "duration" : 1538
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "49b000c86662c7f3.json",
+  "parameterValues" : [ ]
+}

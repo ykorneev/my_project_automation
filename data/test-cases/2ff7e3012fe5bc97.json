@@ -1,0 +1,167 @@
+{
+  "uid" : "2ff7e3012fe5bc97",
+  "name" : "Проверка загрузки главной страницы",
+  "fullName" : "tests.test_authorization_and_registration#test_homepage",
+  "historyId" : "364cd68de0711a94ac402335daafaac5",
+  "time" : {
+    "start" : 1747603652432,
+    "stop" : 1747603652432,
+    "duration" : 0
+  },
+  "description" : "Убедиться, что при открытии сайта отображается логотип, подтверждающий загрузку страницы",
+  "descriptionHtml" : "<p>Убедиться, что при открытии сайта отображается логотип, подтверждающий загрузку страницы</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+  "statusTrace" : "('/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py', 79, \"Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\")",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652390,
+      "duration" : 245
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1747603652433,
+      "stop" : 1747603652433,
+      "duration" : 0
+    },
+    "status" : "skipped",
+    "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 139, in _multicall\n    teardown.throw(exception)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 53, in run_old_style_hookwrapper\n    return result.get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_result.py\", line 103, in get_result\n    raise exc.with_traceback(tb)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 121, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py\", line 79, in _skip_sensitive\n    pytest.skip(\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorization_and_registration"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmf6wy0o8zjz"
+  }, {
+    "name" : "thread",
+    "value" : "2511-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_authorization_and_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "373936f06dfcb17c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1745242593562,
+        "stop" : 1745242593601,
+        "duration" : 39
+      }
+    }, {
+      "uid" : "13d9e173f5f89d13",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741821706858,
+        "stop" : 1741821706922,
+        "duration" : 64
+      }
+    }, {
+      "uid" : "bf2eb2a8709ff9d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741818331130,
+        "stop" : 1741818331169,
+        "duration" : 39
+      }
+    }, {
+      "uid" : "6738a31de0246f77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741032988042,
+        "stop" : 1741032988061,
+        "duration" : 19
+      }
+    }, {
+      "uid" : "5a8f41819a8aa521",
+      "status" : "passed",
+      "time" : {
+        "start" : 1739233288802,
+        "stop" : 1739233288821,
+        "duration" : 19
+      }
+    }, {
+      "uid" : "db7c06644ebf0c7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1739231223504,
+        "stop" : 1739231223522,
+        "duration" : 18
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2ff7e3012fe5bc97.json",
+  "parameterValues" : [ ]
+}

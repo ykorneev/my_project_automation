@@ -1,0 +1,143 @@
+{
+  "uid" : "4ef547b9ee718906",
+  "name" : "test_login_logout_flow",
+  "fullName" : "tests.test_authorization_and_registration#test_login_logout_flow",
+  "historyId" : "8eb4f1f8d1e752c4efabfb2b65eb2b4f",
+  "time" : {
+    "start" : 1741821707949,
+    "stop" : 1741821708443,
+    "duration" : 494
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\n  (Session info: chrome=134.0.6998.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nStacktrace:\n0   chromedriver                        0x000000010ecd9808 chromedriver + 6105096\n1   chromedriver                        0x000000010ecd140a chromedriver + 6071306\n2   chromedriver                        0x000000010e76c600 chromedriver + 415232\n3   chromedriver                        0x000000010e77fcfb chromedriver + 494843\n4   chromedriver                        0x000000010e77eab2 chromedriver + 490162\n5   chromedriver                        0x000000010e773dd9 chromedriver + 445913\n6   chromedriver                        0x000000010e771e58 chromedriver + 437848\n7   chromedriver                        0x000000010e775c03 chromedriver + 453635\n8   chromedriver                        0x000000010e775cb3 chromedriver + 453811\n9   chromedriver                        0x000000010e7bffbe chromedriver + 757694\n10  chromedriver                        0x000000010e7b2360 chromedriver + 701280\n11  chromedriver                        0x000000010e7e4612 chromedriver + 906770\n12  chromedriver                        0x000000010e7b1d68 chromedriver + 699752\n13  chromedriver                        0x000000010e7e47ce chromedriver + 907214\n14  chromedriver                        0x000000010e80bc3d chromedriver + 1068093\n15  chromedriver                        0x000000010e7e43e3 chromedriver + 906211\n16  chromedriver                        0x000000010e7b029a chromedriver + 692890\n17  chromedriver                        0x000000010e7b13f1 chromedriver + 697329\n18  chromedriver                        0x000000010ec98d00 chromedriver + 5840128\n19  chromedriver                        0x000000010ec9cbd4 chromedriver + 5856212\n20  chromedriver                        0x000000010ec73936 chromedriver + 5687606\n21  chromedriver                        0x000000010ec9d5cb chromedriver + 5858763\n22  chromedriver                        0x000000010ec62024 chromedriver + 5615652\n23  chromedriver                        0x000000010ecbf368 chromedriver + 5997416\n24  chromedriver                        0x000000010ecbf52f chromedriver + 5997871\n25  chromedriver                        0x000000010ecd0fe8 chromedriver + 6070248\n26  libsystem_pthread.dylib             0x00007ff80905c253 _pthread_start + 99\n27  libsystem_pthread.dylib             0x00007ff809057bef thread_start + 15",
+  "statusTrace" : "driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"460145918d4fa64d8eba8af224ce0519\")>\n\n    def test_login_logout_flow(driver):\n        auth_page = AuthPage(driver)\n    \n>       auth_page.login(\"TestYura123\", \"Test12345\")\n\ntests/test_authorization_and_registration.py:43: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages/auth_page.py:26: in login\n    self.click(self.LOGIN_BUTTON)\npages/base_page.py:12: in click\n    self.wait.until(EC.element_to_be_clickable(locator)).click()\n.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:119: in click\n    self._execute(Command.CLICK_ELEMENT)\n.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webelement.py:570: in _execute\n    return self._parent.execute(command, params)\n.venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:429: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x1081c9400>\nresponse = {'status': 404, 'value': '{\"value\":{\"error\":\"stale element reference\",\"message\":\"stale element reference: stale elemen...7ff80905c253 _pthread_start + 99\\\\n27  libsystem_pthread.dylib             0x00007ff809057bef thread_start + 15\\\\n\"}}'}\n\n    def check_response(self, response: Dict[str, Any]) -> None:\n        \"\"\"Checks that a JSON response from the WebDriver does not have an\n        error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get(\"status\", None)\n        if not status or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen: str = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get(\"value\", None)\n            if value_json and isinstance(value_json, str):\n                import json\n    \n                try:\n                    value = json.loads(value_json)\n                    if len(value) == 1:\n                        value = value[\"value\"]\n                    status = value.get(\"error\", None)\n                    if not status:\n                        status = value.get(\"status\", ErrorCode.UNKNOWN_ERROR)\n                        message = value.get(\"value\") or value.get(\"message\")\n                        if not isinstance(message, str):\n                            value = message\n                            message = message.get(\"message\")\n                    else:\n                        message = value.get(\"message\", None)\n                except ValueError:\n                    pass\n    \n        exception_class: Type[WebDriverException]\n        e = ErrorCode()\n        error_codes = [item for item in dir(e) if not item.startswith(\"__\")]\n        for error_code in error_codes:\n            error_info = getattr(ErrorCode, error_code)\n            if isinstance(error_info, list) and status in error_info:\n                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)\n                break\n        else:\n            exception_class = WebDriverException\n    \n        if not value:\n            value = response[\"value\"]\n        if isinstance(value, str):\n            raise exception_class(value)\n        if message == \"\" and \"message\" in value:\n            message = value[\"message\"]\n    \n        screen = None  # type: ignore[assignment]\n        if \"screen\" in value:\n            screen = value[\"screen\"]\n    \n        stacktrace = None\n        st_value = value.get(\"stackTrace\") or value.get(\"stacktrace\")\n        if st_value:\n            if isinstance(st_value, str):\n                stacktrace = st_value.split(\"\\n\")\n            else:\n                stacktrace = []\n                try:\n                    for frame in st_value:\n                        line = frame.get(\"lineNumber\", \"\")\n                        file = frame.get(\"fileName\", \"<anonymous>\")\n                        if line:\n                            file = f\"{file}:{line}\"\n                        meth = frame.get(\"methodName\", \"<anonymous>\")\n                        if \"className\" in frame:\n                            meth = f\"{frame['className']}.{meth}\"\n                        msg = \"    at %s (%s)\"\n                        msg = msg % (meth, file)\n                        stacktrace.append(msg)\n                except TypeError:\n                    pass\n        if exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if \"data\" in value:\n                alert_text = value[\"data\"].get(\"text\")\n            elif \"alert\" in value:\n                alert_text = value[\"alert\"].get(\"text\")\n            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found\nE         (Session info: chrome=134.0.6998.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception\nE       Stacktrace:\nE       0   chromedriver                        0x000000010ecd9808 chromedriver + 6105096\nE       1   chromedriver                        0x000000010ecd140a chromedriver + 6071306\nE       2   chromedriver                        0x000000010e76c600 chromedriver + 415232\nE       3   chromedriver                        0x000000010e77fcfb chromedriver + 494843\nE       4   chromedriver                        0x000000010e77eab2 chromedriver + 490162\nE       5   chromedriver                        0x000000010e773dd9 chromedriver + 445913\nE       6   chromedriver                        0x000000010e771e58 chromedriver + 437848\nE       7   chromedriver                        0x000000010e775c03 chromedriver + 453635\nE       8   chromedriver                        0x000000010e775cb3 chromedriver + 453811\nE       9   chromedriver                        0x000000010e7bffbe chromedriver + 757694\nE       10  chromedriver                        0x000000010e7b2360 chromedriver + 701280\nE       11  chromedriver                        0x000000010e7e4612 chromedriver + 906770\nE       12  chromedriver                        0x000000010e7b1d68 chromedriver + 699752\nE       13  chromedriver                        0x000000010e7e47ce chromedriver + 907214\nE       14  chromedriver                        0x000000010e80bc3d chromedriver + 1068093\nE       15  chromedriver                        0x000000010e7e43e3 chromedriver + 906211\nE       16  chromedriver                        0x000000010e7b029a chromedriver + 692890\nE       17  chromedriver                        0x000000010e7b13f1 chromedriver + 697329\nE       18  chromedriver                        0x000000010ec98d00 chromedriver + 5840128\nE       19  chromedriver                        0x000000010ec9cbd4 chromedriver + 5856212\nE       20  chromedriver                        0x000000010ec73936 chromedriver + 5687606\nE       21  chromedriver                        0x000000010ec9d5cb chromedriver + 5858763\nE       22  chromedriver                        0x000000010ec62024 chromedriver + 5615652\nE       23  chromedriver                        0x000000010ecbf368 chromedriver + 5997416\nE       24  chromedriver                        0x000000010ecbf52f chromedriver + 5997871\nE       25  chromedriver                        0x000000010ecd0fe8 chromedriver + 6070248\nE       26  libsystem_pthread.dylib             0x00007ff80905c253 _pthread_start + 99\nE       27  libsystem_pthread.dylib             0x00007ff809057bef thread_start + 15\n\n.venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:232: StaleElementReferenceException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1741821704773,
+      "stop" : 1741821706838,
+      "duration" : 2065
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1741821611800,
+      "stop" : 1741821611801,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1741821707949,
+      "stop" : 1741821707949,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1741821611801,
+      "stop" : 1741821611802,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1741821611802,
+      "stop" : 1741821611802,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1741821740462,
+      "stop" : 1741821740580,
+      "duration" : 118
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorization_and_registration"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Natasha.local"
+  }, {
+    "name" : "thread",
+    "value" : "18976-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_authorization_and_registration"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4ef547b9ee718906.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,143 @@
+{
+  "uid" : "ae8e56fd043a6310",
+  "name" : "Замер времени загрузки страницы товара",
+  "fullName" : "tests.test_perfomance#test_page_product_load",
+  "historyId" : "1c110b8dd1f4eebc47f2270059acd38f",
+  "time" : {
+    "start" : 1747603652476,
+    "stop" : 1747603652476,
+    "duration" : 0
+  },
+  "description" : "Проверка, что страница товара загружается менее чем за 5 секунд",
+  "descriptionHtml" : "<p>Проверка, что страница товара загружается менее чем за 5 секунд</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/",
+  "statusTrace" : "('/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py', 79, \"Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\")",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652390,
+      "duration" : 245
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1747603652477,
+      "stop" : 1747603652477,
+      "duration" : 0
+    },
+    "status" : "skipped",
+    "statusMessage" : "Skipped: This test is destructive and the target URL is considered a sensitive environment. If this test is not destructive, add the 'nondestructive' marker to it. Sensitive URL: https://www.demoblaze.com/\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 139, in _multicall\n    teardown.throw(exception)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 53, in run_old_style_hookwrapper\n    return result.get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_result.py\", line 103, in get_result\n    raise exc.with_traceback(tb)\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 38, in run_old_style_hookwrapper\n    res = yield\n          ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pluggy/_callers.py\", line 121, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1126, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/fixtures.py\", line 932, in call_fixture_func\n    fixture_result = fixturefunc(**kwargs)\n                     ^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/pytest_selenium/safety.py\", line 79, in _skip_sensitive\n    pytest.skip(\n  File \"/opt/hostedtoolcache/Python/3.12.5/x64/lib/python3.12/site-packages/_pytest/outcomes.py\", line 139, in skip\n    raise Skipped(msg=msg, allow_module_level=allow_module_level)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1747603652145,
+      "stop" : 1747603652145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_perfomance"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmf6wy0o8zjz"
+  }, {
+    "name" : "thread",
+    "value" : "2511-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_perfomance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "40f2a4c1dcff000a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1745242686148,
+        "stop" : 1745242687873,
+        "duration" : 1725
+      }
+    }, {
+      "uid" : "ac3b48d2a9d43134",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741821799820,
+        "stop" : 1741821801370,
+        "duration" : 1550
+      }
+    }, {
+      "uid" : "1ecc55b4759c9877",
+      "status" : "passed",
+      "time" : {
+        "start" : 1741818459030,
+        "stop" : 1741818460639,
+        "duration" : 1609
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ae8e56fd043a6310.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,709 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_add_items_to_cart_and_order_placement",
+      "children" : [ {
+        "name" : "test_add_correct_item_to_cart",
+        "uid" : "a55b8974b318eb2c",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741032932664,
+          "stop" : 1741032936068,
+          "duration" : 3404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_order_placement_with_empty_fields",
+        "uid" : "c15e28a79c1afd73",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741032945412,
+          "stop" : 1741032948926,
+          "duration" : 3514
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cart_is_empty_after_purchase",
+        "uid" : "3510c843091f7ebd",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741032971752,
+          "stop" : 1741032976695,
+          "duration" : 4943
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление одного товара в корзину",
+        "uid" : "c8fb163f28d05095",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652145,
+          "stop" : 1747603652145,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление нескольких товаров в корзину",
+        "uid" : "e40a80b7dd25b067",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652394,
+          "stop" : 1747603652394,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Удаление товара из корзины",
+        "uid" : "648fe88bce54551d",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652406,
+          "stop" : 1747603652406,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Оформление заказа",
+        "uid" : "fa22db27302f7115",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652408,
+          "stop" : 1747603652408,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Авторизация",
+        "uid" : "abd611bb56927a73",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652410,
+          "stop" : 1747603652410,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Выход из системы",
+        "uid" : "1d2e10981e53f255",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652411,
+          "stop" : 1747603652411,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Отправка сообщения через форму Contact Us",
+        "uid" : "c8a276f8742f5680",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652413,
+          "stop" : 1747603652413,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Загрузка главной страницы",
+        "uid" : "fce3b6c7fa8c3d32",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652415,
+          "stop" : 1747603652415,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Laptops'",
+        "uid" : "881a5100049bf47e",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652417,
+          "stop" : 1747603652417,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Добавление товара в корзину авторизованным пользователем и оформление заказа",
+        "uid" : "e02109673dc56c42",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652419,
+          "stop" : 1747603652419,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Оформление заказа с пустым полем карты",
+        "uid" : "7fcbb2bccd643bb2",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652421,
+          "stop" : 1747603652421,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Оформление заказа с пустым полем имени",
+        "uid" : "f0a42f932e84bd62",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652423,
+          "stop" : 1747603652423,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Оформление заказа с пустым полем 'Country'",
+        "uid" : "db78669b94678f1b",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652425,
+          "stop" : 1747603652425,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Phones'",
+        "uid" : "73c166ab3bfde4c5",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652427,
+          "stop" : 1747603652427,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Laptops'",
+        "uid" : "b4b1510c262cd1ae",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652429,
+          "stop" : 1747603652429,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Monitors'",
+        "uid" : "47aff6f20252f5be",
+        "parentUid" : "92d038dc06fafbfc1938741cea93e425",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652431,
+          "stop" : 1747603652431,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "92d038dc06fafbfc1938741cea93e425"
+    }, {
+      "name" : "test_authorization_and_registration",
+      "children" : [ {
+        "name" : "test_logo",
+        "uid" : "9a45c6bc34e5cbbf",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741032988121,
+          "stop" : 1741032988144,
+          "duration" : 23
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_registration_form",
+        "uid" : "af83f0f9768c70be",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741032988190,
+          "stop" : 1741032989723,
+          "duration" : 1533
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка загрузки главной страницы",
+        "uid" : "2ff7e3012fe5bc97",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652432,
+          "stop" : 1747603652432,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка отображения кнопки 'Sign up'",
+        "uid" : "f10b108e401276d3",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652434,
+          "stop" : 1747603652434,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка отображения кнопки 'Log in'",
+        "uid" : "f5449f1328c4f410",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652436,
+          "stop" : 1747603652436,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка входа в систему",
+        "uid" : "840bb3f1dbe20d19",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652438,
+          "stop" : 1747603652438,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка выхода из системы",
+        "uid" : "b676e711987ec05",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652440,
+          "stop" : 1747603652440,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка входа с неверным паролем",
+        "uid" : "e344eb1507f598f5",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652442,
+          "stop" : 1747603652442,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка входа с неверным логином",
+        "uid" : "70b0089924c046b8",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652444,
+          "stop" : 1747603652444,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Регистрация с уже существующим логином",
+        "uid" : "42c1e08e2c6016b",
+        "parentUid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652446,
+          "stop" : 1747603652446,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ca5d3e7bdf0a2384ccfbdbf62c886f4"
+    }, {
+      "name" : "test_categories_and_products",
+      "children" : [ {
+        "name" : "test_open_card_products",
+        "uid" : "68cf33f2b857c713",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741032999117,
+          "stop" : 1741033000661,
+          "duration" : 1544
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_about_us_page",
+        "uid" : "21ab06d51e2a4a31",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "broken",
+        "time" : {
+          "start" : 1741033000664,
+          "stop" : 1741033000675,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_contact_us_page",
+        "uid" : "b2d0351bb05c317",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "broken",
+        "time" : {
+          "start" : 1741033000706,
+          "stop" : 1741033000719,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_filter_phones",
+        "uid" : "d79d1afd1c76b900",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1745242630413,
+          "stop" : 1745242630495,
+          "duration" : 82
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_filter_monitors",
+        "uid" : "9daba19e956d495f",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1745242630498,
+          "stop" : 1745242630574,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_back_to_home_page",
+        "uid" : "c42cd158d7162bc8",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1745242630576,
+          "stop" : 1745242630967,
+          "duration" : 391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_contact_us",
+        "uid" : "5a45d3a3431a3c8e",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "broken",
+        "time" : {
+          "start" : 1745242643532,
+          "stop" : 1745242644154,
+          "duration" : 622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Laptops'",
+        "uid" : "b4e7bd48004bed7b",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652448,
+          "stop" : 1747603652448,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Phones'",
+        "uid" : "950a6f6a991a69dc",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652450,
+          "stop" : 1747603652450,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Фильтрация товаров по категории 'Monitors'",
+        "uid" : "f59541aef06782b1",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652452,
+          "stop" : 1747603652452,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Возврат на главную страницу по клику на логотип",
+        "uid" : "df1d85a0199c9619",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652454,
+          "stop" : 1747603652454,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Открытие карточки товара",
+        "uid" : "66e34c89999bd32",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652456,
+          "stop" : 1747603652456,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Модальное окно 'About Us'",
+        "uid" : "34b095376186dbac",
+        "parentUid" : "2eca6a82b0926256dbe4299b144d6e66",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652458,
+          "stop" : 1747603652458,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2eca6a82b0926256dbe4299b144d6e66"
+    }, {
+      "name" : "test_perfomance",
+      "children" : [ {
+        "name" : "test_page_products",
+        "uid" : "49b000c86662c7f3",
+        "parentUid" : "57216452fcf87579f8ec5094deae17d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1741033071757,
+          "stop" : 1741033073344,
+          "duration" : 1587
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Замер времени загрузки главной страницы",
+        "uid" : "cad44b8a29198186",
+        "parentUid" : "57216452fcf87579f8ec5094deae17d2",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652474,
+          "stop" : 1747603652474,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Замер времени загрузки страницы товара",
+        "uid" : "ae8e56fd043a6310",
+        "parentUid" : "57216452fcf87579f8ec5094deae17d2",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652476,
+          "stop" : 1747603652476,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "57216452fcf87579f8ec5094deae17d2"
+    }, {
+      "name" : "test_content",
+      "children" : [ {
+        "name" : "Проверка отображения изображений товаров",
+        "uid" : "a9512fd4e9cda0c7",
+        "parentUid" : "a9f94e6a1391234ab108e63fb7cb9356",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652460,
+          "stop" : 1747603652460,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка отображения цен товаров",
+        "uid" : "5af941707b00b557",
+        "parentUid" : "a9f94e6a1391234ab108e63fb7cb9356",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652462,
+          "stop" : 1747603652462,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка работы кнопки 'Next'",
+        "uid" : "f088262253545cbd",
+        "parentUid" : "a9f94e6a1391234ab108e63fb7cb9356",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652464,
+          "stop" : 1747603652464,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9f94e6a1391234ab108e63fb7cb9356"
+    }, {
+      "name" : "test_cross_browser",
+      "children" : [ {
+        "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+        "uid" : "d6c33e77513335f",
+        "parentUid" : "4ea0f63353f1ab52531a6220dcda37c1",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652466,
+          "stop" : 1747603652466,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chrome'" ]
+      }, {
+        "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+        "uid" : "71dd4497cf775339",
+        "parentUid" : "4ea0f63353f1ab52531a6220dcda37c1",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652468,
+          "stop" : 1747603652468,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'firefox'" ]
+      }, {
+        "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+        "uid" : "f32e13fd3ab7f54",
+        "parentUid" : "4ea0f63353f1ab52531a6220dcda37c1",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652470,
+          "stop" : 1747603652470,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'safari'" ]
+      }, {
+        "name" : "Кросс-браузерная проверка отображения кнопки 'Log in'",
+        "uid" : "fcb5f275aaac428d",
+        "parentUid" : "4ea0f63353f1ab52531a6220dcda37c1",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1747603652472,
+          "stop" : 1747603652472,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'edge'" ]
+      } ],
+      "uid" : "4ea0f63353f1ab52531a6220dcda37c1"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ],
+  "name" : "packages"
+}

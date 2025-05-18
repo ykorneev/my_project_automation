@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/nav/div[1]/ul/li[3]/a\"}\n  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n0   chromedriver                        0x000000010d123708 chromedriver + 5969672\n1   chromedriver                        0x000000010d11b32a chromedriver + 5935914\n2   chromedriver                        0x000000010cbd7650 chromedriver + 415312\n3   chromedriver                        0x000000010cc28e94 chromedriver + 749204\n4   chromedriver                        0x000000010cc29041 chromedriver + 749633\n5   chromedriver                        0x000000010cc79294 chromedriver + 1077908\n6   chromedriver                        0x000000010cc4f19d chromedriver + 905629\n7   chromedriver                        0x000000010cc764f7 chromedriver + 1066231\n8   chromedriver                        0x000000010cc4ef43 chromedriver + 905027\n9   chromedriver                        0x000000010cc1acea chromedriver + 691434\n10  chromedriver                        0x000000010cc1be41 chromedriver + 695873\n11  chromedriver                        0x000000010d0e6910 chromedriver + 5720336\n12  chromedriver                        0x000000010d0ea850 chromedriver + 5736528\n13  chromedriver                        0x000000010d0c7c07 chromedriver + 5594119\n14  chromedriver                        0x000000010d0eb2fb chromedriver + 5739259\n15  chromedriver                        0x000000010d0b6484 chromedriver + 5522564\n16  chromedriver                        0x000000010d1091d8 chromedriver + 5861848\n17  chromedriver                        0x000000010d10939f chromedriver + 5862303\n18  chromedriver                        0x000000010d11af08 chromedriver + 5934856\n19  libsystem_pthread.dylib             0x00007ff818385253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff818380bef thread_start + 15",
+      "children" : [ {
+        "name" : "test_about_us_page",
+        "uid" : "21ab06d51e2a4a31",
+        "parentUid" : "2042595afdaeb445243995e76942f415",
+        "status" : "broken",
+        "time" : {
+          "start" : 1741033000664,
+          "stop" : 1741033000675,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2042595afdaeb445243995e76942f415"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/nav/div[1]/ul/li[2]/a\"}\n  (Session info: chrome=133.0.6943.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nStacktrace:\n0   chromedriver                        0x000000010d123708 chromedriver + 5969672\n1   chromedriver                        0x000000010d11b32a chromedriver + 5935914\n2   chromedriver                        0x000000010cbd7650 chromedriver + 415312\n3   chromedriver                        0x000000010cc28e94 chromedriver + 749204\n4   chromedriver                        0x000000010cc29041 chromedriver + 749633\n5   chromedriver                        0x000000010cc79294 chromedriver + 1077908\n6   chromedriver                        0x000000010cc4f19d chromedriver + 905629\n7   chromedriver                        0x000000010cc764f7 chromedriver + 1066231\n8   chromedriver                        0x000000010cc4ef43 chromedriver + 905027\n9   chromedriver                        0x000000010cc1acea chromedriver + 691434\n10  chromedriver                        0x000000010cc1be41 chromedriver + 695873\n11  chromedriver                        0x000000010d0e6910 chromedriver + 5720336\n12  chromedriver                        0x000000010d0ea850 chromedriver + 5736528\n13  chromedriver                        0x000000010d0c7c07 chromedriver + 5594119\n14  chromedriver                        0x000000010d0eb2fb chromedriver + 5739259\n15  chromedriver                        0x000000010d0b6484 chromedriver + 5522564\n16  chromedriver                        0x000000010d1091d8 chromedriver + 5861848\n17  chromedriver                        0x000000010d10939f chromedriver + 5862303\n18  chromedriver                        0x000000010d11af08 chromedriver + 5934856\n19  libsystem_pthread.dylib             0x00007ff818385253 _pthread_start + 99\n20  libsystem_pthread.dylib             0x00007ff818380bef thread_start + 15",
+      "children" : [ {
+        "name" : "test_contact_us_page",
+        "uid" : "b2d0351bb05c317",
+        "parentUid" : "16beb998c57f4c488d68acf4081f0591",
+        "status" : "broken",
+        "time" : {
+          "start" : 1741033000706,
+          "stop" : 1741033000719,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "16beb998c57f4c488d68acf4081f0591"
+    }, {
+      "name" : "AttributeError: 'ContactPage' object has no attribute 'EMAIL_INPUT'",
+      "children" : [ {
+        "name" : "test_contact_us",
+        "uid" : "5a45d3a3431a3c8e",
+        "parentUid" : "3e8aac2526c6cdbd3c78be0edae2903d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1745242643532,
+          "stop" : 1745242644154,
+          "duration" : 622
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e8aac2526c6cdbd3c78be0edae2903d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
